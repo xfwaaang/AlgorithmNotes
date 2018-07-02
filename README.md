@@ -3,6 +3,7 @@
 ### 算法笔记
 - Array
     - [最大收益](/max_profit.cpp)
+    - [找到数组中出现一次的元素](/single_number.cpp)
 - String
 - Math
     - [翻转一个整数](/reverse_int.cpp)
