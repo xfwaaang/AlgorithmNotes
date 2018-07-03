@@ -10,6 +10,9 @@
 */
 int random(int min = 0, int max = 100)
 {
+	if(min > max)
+		throw "Invalid arguments";
+	
 	return rand() % (max-min+1) + min;
 }
 
