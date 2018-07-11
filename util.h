@@ -34,4 +34,30 @@ std::vector<int> genRandomArray(int n = 10, int min = 0, int max = 100)
 	return randomArray;
 }
 
+/*
+取最小值
+*/
+int min(int x, int y)
+{
+	return x < y ? x : y;
+}
+
+/*
+取最大值
+*/
+int max(int x, int y)
+{
+	return x > y ? x : y;
+}
+
+/*
+获取数组的长度
+*/
+template<class T>
+int length(T& array)
+{
+	return sizeof(array) / sizeof(array[0]);
+}
+
+
 #endif

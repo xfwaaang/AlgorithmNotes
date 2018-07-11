@@ -107,7 +107,7 @@ int main()
 		<< "		exhaustion_better: " << gcd_exhaustion_better(a, b) 
 		<< "		divide_iterative: " << gcd_divide_iterative(a, b) 
 		<< "		divide_recursive: " << gcd_divide_recursive(a, b)
-		<< "		divide_subtraction: " << gcd_subtraction(a, b) 
+		<< "		subtraction: " << gcd_subtraction(a, b) 
 		<< endl;
 
 	}
