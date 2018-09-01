@@ -22,11 +22,11 @@ int maxArea(vector<int> &height)
 		for (int j = i+1; j < len; ++j)
 		{
 			int area = min(height[i], height[j]) * (j - i);
-			cout << area << " ";
+			// cout << area << " ";
 			if(area > max_area)
 				max_area = area;
 		}
-		cout << endl;
+		// cout << endl;
 	}
 	return max_area;
 }
