@@ -16,20 +16,27 @@ int w[] = {2, 3, 4, 5};
 int v[] = {3, 4, 5, 6};
 
 // 背包容量
-int capacity = 8;
+int c = 8;
 
-// 暴力法
-int fun1(int n, int capacity, int w[], int v[])
+// 动态规划
+int fun(int n, int c, int w[], int v[])
 {
-	int maxv = 0;
-	int currv = 0;
-	for(int i=0; i<n; ++i)
+	int a[n+1][c+1] = {};
+	for(int i=1; i<=c; ++i)
 	{
-		if(capacity > w[i] )
+		for(int j=1; j<=n; ++j)
+		{
+			if(i < w[j-1])
+				a[j][i] = a[j-1][i];
+			else
+				a[j][i] = max(a[j-1][i], a[j-1][i-w[j-1]] + v[j-1]);
+		}
 	}
+	return a[n][c];
 }
 
 int main()
 {
 	cout << "01背包问题" << endl;
+	cout << fun(n, c, w, v) << endl;
 }
