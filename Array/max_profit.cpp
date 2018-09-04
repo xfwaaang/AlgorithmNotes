@@ -2,8 +2,9 @@
 题目描述：
 假设您有一个数组，其中第i个元素是第i天给定股票的价格。 
 设计一个算法来找到最大的利润。
-您可以根据需要完成尽可能多的交易（即多次买入和卖出一次股票）。
+1. 您可以根据需要完成尽可能多的交易（即多次买入和卖出一次股票）。
 但是，您不得同时进行多笔交易（即您必须在再次购买之前出售股票）。
+2. 您只可以进行一次交易
 */
 
 #include<iostream>
@@ -13,6 +14,7 @@
 using namespace std;
 
 /*
+1. 可以进行多次交易
 判断相邻元素是否递增，因为连续递增可以看作一次买入卖出操作，统计所有递增量
 */
 int maxProfit(vector<int> &prices)
@@ -31,16 +33,41 @@ int maxProfit(vector<int> &prices)
 	return res;
 }
 
+/*
+2. 只可以进行一次交易
+记录前i个元素中最小的股票价值
+*/
+int maxProfit_other(vector<int> &prices)
+{
+	int n = prices.size();
+
+	if(n < 2) return 0;
+
+	int minPrice = prices[0];
+	int maxProfit = 0;
+
+	for(int i=1; i<n; ++i)
+	{
+		minPrice = min(minPrice, prices[i-1]);
+		maxProfit = max(maxProfit, prices[i] - minPrice);
+	}
+
+	return maxProfit;
+}
+
 int main()
 {
-	vector<int> randomArray = genRandomArray(4, 0, 4);
+	vector<int> randomArray = genRandomArray(5, 0, 10);
 
 	for (int i = 0; i < randomArray.size(); ++i)
 	{
 		cout << randomArray[i] << " ";
 	}
 	cout << endl;
+	cout << "进行多次交易" << endl;
 	cout << "max_profit: " << maxProfit(randomArray) << endl;
+	cout << "进行一次交易" << endl;
+	cout << "max_profit: " << maxProfit_other(randomArray) << endl;
 
 	return 0;
 }
