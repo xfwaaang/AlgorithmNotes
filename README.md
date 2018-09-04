@@ -48,6 +48,7 @@
 - [判断一个数是否为质数](/Math/prime.cpp)
 
 - [求解斐波那契数列](/Math/fib.cpp)
+- [判断一个整数是否为回文数](/Math/is_palindrome.cpp)
 
 #### [String](/String)
 
