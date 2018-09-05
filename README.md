@@ -35,7 +35,7 @@
   > 时间复杂度：O(n)
 
 - [flip&invert图片矩阵](/Array/flip_and_invert_image.cpp)
-- [Array Partition I](/Array/Array/array_pair_sum.cpp)
+- [Array Partition I](/Array/array_pair_sum.cpp)
 
 #### [Math](/Math)
 
