@@ -34,6 +34,9 @@
   > 连续的子阵列[4, -1, 2, 1]具有最大的和为6。   
   > 时间复杂度：O(n)
 
+- [flip&invert图片矩阵](/Array/flip_and_invert_image.cpp)
+- [Array Partition I](/Array/Array/array_pair_sum.cpp)
+
 #### [Math](/Math)
 
 - [翻转一个整数](/Math/reverse_int.cpp)
@@ -54,6 +57,7 @@
 #### [String](/String)
 
 - [整数转化为罗马数字](/String/int2roman.cpp)
+- [将英文单词转换为小写状态](/String/to_low_case.cpp)
 
 #### [Linklist](/Linklist)
 

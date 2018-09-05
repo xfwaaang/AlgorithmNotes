@@ -2,8 +2,16 @@
 #define util_h
 
 #include<vector>
+#include<iostream>
 #include<ctime>
 #include<cstdlib>
+
+void printArray(std::vector<int> a)
+{
+	for(int i=0; i<a.size(); ++i)
+		std::cout << a[i] << " ";
+	std::cout << std::endl;
+}
 
 /*
 生成[min,max]之间的随机数
@@ -32,6 +40,23 @@ std::vector<int> genRandomArray(int n = 10, int min = 0, int max = 100)
 	}
 
 	return randomArray;
+}
+
+/*
+生成一个n*n的随机矩阵
+*/
+std::vector< std::vector<int> > genRandomMatrix(int n = 4, int min = 0, int max = 1)
+{
+	if (n < 1 || min > max)
+		throw "Invalid arguments";
+
+	std::vector< std::vector<int> > matrix(n);
+	for(int i=0; i<n; ++i)
+	{	
+		matrix[i] = genRandomArray(n, min, max);
+	}
+
+	return matrix;
 }
 
 /*
