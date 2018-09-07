@@ -1,6 +1,6 @@
 ### Array
 
-- [最大收益](/max_profit.cpp)
+- [最大收益](/Array/max_profit.cpp)
 
   > 假设您有一个数组，其中第i个元素是第i天给定股票的价格。 
   > 设计一个算法来找到最大的利润。  
@@ -8,29 +8,29 @@
   > 但是，您不得同时进行多笔交易（即您必须在再次购买之前出售股票）。
   > 2. 您只可以进行一次交易。
 
-- [找到数组中出现一次的元素](/single_number.cpp)
+- [找到数组中出现一次的元素](/Array/single_number.cpp)
 
   > 给定一个整数数组，除了一个元素外，每个元素都会出现两次，
   > 找到那一个。   
   > 注意：时间复杂度O(n)，空间复杂度O(1)
 
-- [两条垂线与X轴所围成最大储水量区域的面积](/max_area.cpp)
+- [两条垂线与X轴所围成最大储水量区域的面积](/Array/max_area.cpp)
 
   > 给定n个非负整数a1，a2，...，an，其中每个表示坐标（i，ai）处的点。  
   > 绘制n条垂直线，使得线i的两个端点位于（i，ai）和（i，0）。  
   > 找到两条线，它们与x轴一起形成一个容器，这个容器装水量最多。   
   > 注意：容器不能倾斜
 
-- [具有最大和的子数组](/max_subarray.cpp)
+- [具有最大和的子数组](/Array/max_subarray.cpp)
 
   > 在具有最大总和的数组（包含至少一个数字）中查找连续的子数组。   
   > 例如，给定数组[-2, 1, -3, 4, -1, 2, 1, -5, 4]  
   > 连续的子阵列[4, -1, 2, 1]具有最大的和为6。   
   > 时间复杂度：O(n)
 
-- [flip&invert图片矩阵](/flip_and_invert_image.cpp)
+- [flip&invert图片矩阵](/Array/flip_and_invert_image.cpp)
 
-- [Array Partition I](/array_pair_sum.cpp)
+- [Array Partition I](/Array/array_pair_sum.cpp)
 
   > 给定一个2n个整数的数组，你的任务是将这些整数分组为n对整数，  
   > 比如说（a1，b1），（a2，b2），...，（an，bn），  
