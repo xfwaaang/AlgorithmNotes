@@ -8,11 +8,11 @@
 
 ### 递归算法示例
 
-- [逆序输出正整数的各位数](Recursive/print_digit_reverse.cpp)
+- [逆序输出正整数的各位数](/Recursive/print_digit_reverse.cpp)
 
 	> 逆序输出正整数的各位数
 
-- [汉诺塔问题](Recursive/hanoi.cpp)
+- [汉诺塔问题](/Recursive/hanoi.cpp)
 
 	> 假定有三个塔座：x，y，z，在塔座x上有n个直径大小不一的圆盘，它们按直径从大到小依次放在x上。
 	> 现要求将x上的圆盘移动到y上，并保持原样堆放。移动过程需遵循以下规则：
