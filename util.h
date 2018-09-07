@@ -6,9 +6,26 @@
 #include<ctime>
 #include<cstdlib>
 
-void printArray(std::vector<int> a)
+template<class T>
+void swap(T a[], int i, int j)
 {
-	for(int i=0; i<a.size(); ++i)
+	T t = a[i];
+	a[i] = a[j];
+	a[j] = t;
+}
+
+template<class T>
+void printArray(T a[], int n)
+{
+	for(int i=0; i<n; ++i)
+		std::cout << a[i] << " ";
+	std::cout << std::endl;
+}
+
+template<class T>
+void printArray(std::vector<T> a)
+{
+	for(T i=0; i<a.size(); ++i)
 		std::cout << a[i] << " ";
 	std::cout << std::endl;
 }
