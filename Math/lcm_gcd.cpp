@@ -22,6 +22,11 @@ using namespace std;
 */
 int gcd_exhaustion(int a, int b)
 {
+	if(a == 0)
+		return b;
+	if(b == 0)
+		return a;
+
 	int k = 1;
 	int t = k;
 	while(k <= a && k <= b)
@@ -41,7 +46,13 @@ int gcd_exhaustion(int a, int b)
 */
  int gcd_exhaustion_better(int a, int b)
  {
+	if(a == 0)
+		return b;
+	if(b == 0)
+		return a;
+
  	int k = a < b ? a : b;
+ 	// a % k || b % k
  	while(!(a % k == 0 && b % k == 0))
  		k--;
  	return k;
@@ -49,6 +60,7 @@ int gcd_exhaustion(int a, int b)
 
  /*
  辗转相除法
+ 又称为欧几里得算法
  1. a%b得余数c
  2. 若c = 0，则b为最大公约数
  3. 若c ！= 0，则a = b，b = c，执行 1
@@ -56,6 +68,11 @@ int gcd_exhaustion(int a, int b)
  // 迭代
 int gcd_divide_iterative(int a, int b)
 {
+	if(a == 0)
+		return b;
+	if(b == 0)
+		return a;
+
 	int c;
 	while(b != 0)
 	{
@@ -70,6 +87,11 @@ int gcd_divide_iterative(int a, int b)
 // 递归
 int gcd_divide_recursive(int a, int b)
 {
+	if(a == 0)
+		return b;
+	if(b == 0)
+		return a;
+
 	return b == 0 ? a : gcd_divide_recursive(b, a%b);
 }
 
@@ -82,6 +104,11 @@ int gcd_divide_recursive(int a, int b)
 */
 int gcd_subtraction(int a, int b)
 {
+	if(a == 0)
+		return b;
+	if(b == 0)
+		return a;
+
 	while(a != b)
 	{
 		if(a > b)
@@ -99,8 +126,8 @@ int main()
 
 	for (int i = 0; i < 100; ++i)
 	{
-		int a = random(1, 100);
-		int b = random(1, 100);
+		int a = random(0, 100);
+		int b = random(0, 100);
 
 		cout << "a = " << a << "	b = " << b
 		<< "		exhaustion: " << gcd_exhaustion(a, b) 
