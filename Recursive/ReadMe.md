@@ -20,8 +20,14 @@
 	>（2）圆盘可以放在x，y，z中任意一个上  
 	>（3）不能将直径较大的圆盘放在较小的圆盘之上  
 
-- [产生所有可能的排列](Recursive/gen_all_permutation.cpp)
+- [产生所有可能的排列](/Recursive/gen_all_permutation.cpp)
 
 	> 产生各种可能的排列  
 	> 给定n个自然数{0,1,2...，n}，产生所有可能的排列（permutation）
+
+- [分别用递归和迭代算法计算二项式系数](/Recursive/binomial_coefficient.cpp)
+	
+	> 写一个递归算法和一个迭代算法计算二项式系数  
+	  (x + y)^n = C(0,n) * x^0 * y^n + C(1,n) * x^1 * y^(n-1) + ... +   
+	  C(m,n) * x^m * y^(n-m) + ... + C(n,n) * x^n * y^0
 
