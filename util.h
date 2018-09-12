@@ -60,23 +60,6 @@ std::vector<int> genRandomArray(int n = 10, int min = 0, int max = 100)
 }
 
 /*
-生成一个n*n的随机矩阵
-*/
-std::vector< std::vector<int> > genRandomMatrix(int n = 4, int min = 0, int max = 1)
-{
-	if (n < 1 || min > max)
-		throw "Invalid arguments";
-
-	std::vector< std::vector<int> > matrix(n);
-	for(int i=0; i<n; ++i)
-	{	
-		matrix[i] = genRandomArray(n, min, max);
-	}
-
-	return matrix;
-}
-
-/*
 取最小值
 */
 int min(int x, int y)
