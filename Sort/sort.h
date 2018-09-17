@@ -51,7 +51,28 @@ void insertSort(std::vector<int>& a)
 
 void binaryInsertSort(std::vector<int>& a)
 {
+	int low, high, mid, key;
 
+	for(int i=1; i<a.size(); ++i)
+	{
+		low = 0;
+		high = i - 1;
+		key = a[i];
+		
+		while(low <= high)
+		{
+			mid = (low + high) / 2;
+			if(key > a[mid])
+				low = mid + 1;
+			else
+				high = mid - 1;
+		}
+
+		for(int j=i-1; j>high; --j)
+			a[j+1] = a[j];
+
+		a[high+1] = key;
+	}
 }
 
 // 选择排序

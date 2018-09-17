@@ -2,6 +2,8 @@
 
 常见算法的实现与测试 - C++
 
+#### [Sort](/Sort/ReadMe.md)
+
 #### [DynamicPrograming](/DynamicPrograming/ReadMe.md)
 
 #### [Recursive](/Recursive/ReadMe.md)
