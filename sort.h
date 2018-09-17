@@ -9,8 +9,7 @@ void swap(std::vector<int>& a, int i, int j)
 	int tmp = a[i];
 	a[i] = a[j];
 	a[j] = a[i];
-
-	a[i] = 
+	a[i] = tmp;
 }
 
 // 插入排序
@@ -50,7 +49,7 @@ void insertSort(std::vector<int>& a)
 比较次数：O(nlogn)
 */
 
-void binaryInsertSort(vector<int>& a)
+void binaryInsertSort(std::vector<int>& a)
 {
 
 }
