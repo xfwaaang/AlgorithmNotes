@@ -15,6 +15,14 @@ void swap(T a[], int i, int j)
 }
 
 template<class T>
+void swap(std::vector<T> &A, int i, int j)
+{
+	T t = A[i];
+	A[i] = A[j];
+	A[j] = t;
+}
+
+template<class T>
 void printArray(T a[], int n)
 {
 	for(int i=0; i<n; ++i)
