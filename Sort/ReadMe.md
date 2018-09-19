@@ -245,6 +245,30 @@ void merge(std::vector<int> &a, int l, int m, int r)
 	while(j <= r)	a[k++] = b[j++];
 }
 
+void merge_2(std::vector<int> &a, int l, int m, int r)
+{
+	// std::vector<int> b(r-l+1);	//默认b(r-l+1, 0)，初始化(r-l+1)个0
+	std::vector<int> b;
+
+	int i = l;
+	int j = m + 1;
+
+	while(i <= m && j <= r)
+	{
+		if(a[i] <= a[j])
+			b.push_back(a[i++]);
+		else
+			b.push_back(a[j++]);
+	}
+
+	while(i <= m)	b.push_back(a[i++]);
+	while(j <= r)	b.push_back(a[j++]);
+
+	int k = 0;
+	for(int i=l; i<=r; ++i)
+		a[i] = b[k++];
+}
+
 void merge_sort(std::vector<int> &a, int l, int r)
 {
 	if(l < r)
