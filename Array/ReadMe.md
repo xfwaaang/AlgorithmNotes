@@ -34,7 +34,7 @@
 
   > 给定一个2n个整数的数组，你的任务是将这些整数分组为n对整数，  
   > 比如说（a1，b1），（a2，b2），...，（an，bn），  
-  > 求所有min(ai， bi）之和的最大值  
+  > 求所有min(ai， bi)之和的最大值  
   > Input: [1,4,3,2]  
   > Output: 4  
   > Explanation: n is 2, and the maximum sum of pairs is 4 = min(1, 2) + min(3, 4).
@@ -46,3 +46,9 @@
     Input: [3,1,2,4]  
     Output: [2,4,3,1]  
     The outputs [4,2,3,1], [2,4,1,3], and [4,2,1,3] would also be accepted.
+
+- [Smallest Range I](/Array/smallest_range_i.cpp)
+
+  > 给定一个整数数组A，对于每个整数A[i]，  
+    我们可以选择任何x，其中-K <= x <= K，并将x加到A[i]。   
+    得到数组B. 返回B的最大值和B的最小值之差。
