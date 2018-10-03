@@ -6,6 +6,8 @@
 
 #### [DynamicPrograming](/DynamicPrograming/ReadMe.md)
 
+#### [DivideAndConquer](/DivideAndConquer/ReadMe.md)
+
 #### [Recursive](/Recursive/ReadMe.md)
 
 #### [Array](/Array/ReadMe.md)
@@ -19,5 +21,6 @@
 #### [Tree](/Tree/ReadMe.md)
 
 #### [BitManipulation](/BitManipulation/ReadMe.md)
+
 
 

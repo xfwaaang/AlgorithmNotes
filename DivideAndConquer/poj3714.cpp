@@ -1,0 +1,108 @@
+/*
+题目描述：
+有两个含有N个点的集合，求两个集合中距离最小的点对距离
+算法描述：
+1. 按x坐标对两个集合一起进行排序，并将其划分成左右两个部分L和R，m = (l+r) / 2
+2. 递归地在L和R中寻找最小距离的点对，记为：(p1, p2), (q1, q2)
+3. 在临界区查找距离小于d的点对，临界区的范围是：[m-d, m+d], 其中d = min(dis(p1, p2), dis(q1, q2))
+4. 对不同集合的点进行标记，只有具有不同标记的点对才是所求的结果，
+*/
+
+#include<iostream>
+#include<iomanip>
+#include<cmath>
+#include<algorithm>
+
+using namespace std;
+
+using LL = long long;
+
+// typedef long long LL;
+
+const int N = 100000;
+const LL INF = 1000000000000;
+
+struct Point
+{
+	LL x, y;
+	int id;
+
+	Point(LL x=0, LL y=0, int id=0): x(x), y(y), id(id){}
+
+	const bool operator < (const Point p) const
+	{
+		return x < p.x;
+	}
+
+} point[2 * N];
+
+// 求两个点的距离
+double dis(int i, int j)
+{
+	return sqrt((double)(pow(point[j].x - point[i].x, 2) + pow(point[j].y - point[i].y, 2)));
+}
+
+double solve(int l, int r)
+{
+	if(l == r)	return INF;
+	
+	int m = (l + r) >> 1;
+	// 递归求解左右两部分的点对的最小距离
+	double a = solve(l, m);
+	double b = solve(m+1, r);
+
+	// d为两者最小值
+	double d = min(a, b);
+
+	// 查找临界区距离小于d的点对
+	for(int i=m; i>=l; --i)
+	{
+		if(point[m].x - point[i].x > d)	break;
+		for(int j=m+1; j<=r; ++j)
+		{
+			double tmp = dis(i, j);
+			if(point[i].id != point[j].id && tmp < d)	d = tmp;
+		}
+	}
+
+	return d;
+}
+
+int main()
+{
+	cout << "POJ3714" << endl;
+
+	// 测试用例的数目
+	int t;
+	// 集合的点对数目
+	int n;
+
+	cin >> t ;
+
+	while(t--)
+	{
+		cin >> n ;
+
+		for(int i=0; i<n; ++i)
+		{
+			cin >> point[i].x >> point[i].y ;
+			point[i].id = 1;
+		}
+
+		for(int i=n; i<2*n; ++i)
+		{
+			cin >> point[i].x >> point[i].y ;
+			point[i].id = 2;
+		}
+
+		// 按每个点x坐标排序
+		sort(point, point + 2*n);
+
+		double res = solve(0, 2*n-1);
+
+		cout << setprecision(4) << res << endl;
+	}
+	
+	return 0;
+}
+
