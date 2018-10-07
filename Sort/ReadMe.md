@@ -264,9 +264,8 @@ void merge_2(std::vector<int> &a, int l, int m, int r)
 	while(i <= m)	b.push_back(a[i++]);
 	while(j <= r)	b.push_back(a[j++]);
 
-	int k = 0;
-	for(int i=l; i<=r; ++i)
-		a[i] = b[k++];
+	for(int i=0; i<b.size(); ++i)
+		a[i+l] = b[i];
 }
 
 void merge_sort(std::vector<int> &a, int l, int r)
