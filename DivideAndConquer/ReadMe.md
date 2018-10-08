@@ -5,7 +5,7 @@
 
 - [POJ3714](/DivideAndConquer/poj3714.md)
 	> 有两个含有N个点的集合，求两个集合中距离最小的点对距离  
-      [poj3714](http://poj.org/problem?id=3714)
+      [POJ3714](http://poj.org/problem?id=3714)
 
 - [求序列的逆序对个数](/DivideAndConquer/reverse_pair.md)
 	> 使用分治方法求整个序列中逆序对个数，并分析算法的时间复杂性  

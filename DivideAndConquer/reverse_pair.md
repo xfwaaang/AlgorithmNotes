@@ -11,11 +11,14 @@
 
 #### 时间复杂度分析
 
-T(n)=2T(n/2) + O(n)
+T(n)=2T(n/2) + O(n)  
+求左右序列元素的逆序对个数时间复杂度为O(n)  
+分解的次数为O(logn)  
+总时间复杂度为O(nlogn)
 
-1. 求左右序列元素的逆序对个数时间复杂度为O(n)
-2. 分解的次数为O(logn)
-3. 总时间复杂度为O(nlogn)
+#### 代码实现
+
+[源代码](/DivideAndConquer/reverse_pair.cpp)
 
 ```
 int merge(vector<int>& a, int l, int m, int h)
