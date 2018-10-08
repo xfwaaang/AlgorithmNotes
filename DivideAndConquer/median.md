@@ -1,10 +1,11 @@
-/*
-题目描述：
+#### 题目描述
+
 有两个有序数组nums1和nums2，长度分别为m和n。 
 找到两个有序数组的中位数，nums1和nums2不能都为空。
-要求时间复杂度：O(log(m+n))
+要求时间复杂度：O(log(m+n)) 
 
-算法描述：
+#### 算法描述
+
 求中位数可以转化为求有序数组的第K个元素  
 用 getKth(k) 表示两个有序数组的第 k 小元素  
 
@@ -15,15 +16,14 @@
 1. 比较a[k/2]与b[k/2]，去除较小者数组的前 k/2 个元素，得到两个新的数组
 2. 递归地执行步骤1
 
-时间复杂度：
+#### 时间复杂度
 O(log(m+n))
-*/
 
-#include<iostream>
-#include<vector>
+#### 代码实现
 
-using namespace std;
+[源代码](/DivideAndConquer/median.cpp)
 
+```
 int getKth(vector<int>& v1, int start1, int end1, vector<int>& v2, int start2, int end2, int k)
 {
 	int n1 = end1 - start1 + 1;
@@ -55,13 +55,4 @@ double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2)
     //将偶数和奇数的情况合并，如果是奇数，会求两次同样的 k 。
     return (getKth(nums1, 0, n - 1, nums2, 0, m - 1, left) + getKth(nums1, 0, n - 1, nums2, 0, m - 1, right)) * 0.5; 
 }
-
-int main()
-{
-	cout << "求两个有序数组的中位数" << endl;
-	vector<int> a{1, 2, 5};
-	vector<int> b{3, 4};
-	
-	cout << findMedianSortedArrays(a, b) << endl;
-	return 0;
-}
+```

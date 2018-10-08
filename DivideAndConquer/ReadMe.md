@@ -1,6 +1,6 @@
 ### Divide and Conquer
 
-- [求两个有序数组的中位数](/DivideAndConquer/median.cpp)
+- [求两个有序数组的中位数](/DivideAndConquer/median.md)
 	> [4. Median of Two Sorted Arrays of LeetCode](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)
 
 - [POJ3714](/DivideAndConquer/poj3714.md)
