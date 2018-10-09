@@ -1,5 +1,3 @@
 ### ToDo
 
-- [ ] /DivideAndConquer/median.md
-- [ ] /DivideAndConquer/poj3714.md
-- [ ] 
+- DivideAndConquer/outline_of_rec.md
