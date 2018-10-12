@@ -3,7 +3,7 @@
 给定一个字符串s，返回“反向”字符串，其中不是字母的字符都保留在原位置，字母字符都反转它们的位置  
 [917. Reverse Only Letters of LeetCode](https://leetcode.com/problems/reverse-only-letters/description/)
 
-> Input: "ab-cd" 
+> Input: "ab-cd"   
   Output: "dc-ba"  
   Input: "a-bC-dEf-ghIj"  
   Output: "j-Ih-gfE-dCba"  
@@ -17,7 +17,7 @@
 
 #### 代码实现
 
-[源代码](DivideAndConquer/reverse_pair.cpp)
+[源代码](/DivideAndConquer/reverse_pair.cpp)
 
 ```
 bool isAlpha(char c)
