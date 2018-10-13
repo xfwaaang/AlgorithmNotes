@@ -8,7 +8,7 @@ Explanation: n is 2, and the maximum sum of pairs is 4 = min(1, 2) + min(3, 4).
 
 #### 代码实现
 
-[源代码](/array_pair_sum.cpp)
+[源代码](/Array/array_pair_sum.cpp)
 
 ```
 int arrayPairSum(vector<int>& a)
