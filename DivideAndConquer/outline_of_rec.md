@@ -9,7 +9,7 @@
 (1, 11), (3, 13), (9, 0), (12, 7), (16, 3), (19, 18), (22, 3), (23, 13)和(29,0)表示  
 另举一个例子，假定只有一个建筑物(1, 5, 11)，其天际轮廓输出为2个高度的变化(1, 11), (5, 0)
 
-![](/Assets/DivideAndConquer%24outline_of_rec.png)  
+<!-- ![](/Assets/DivideAndConquer%24outline_of_rec.png)   -->
 
-<img src="/Assets/DivideAndConquer%24outline_of_rec.png" width="600" height="200" align="right">
+<img src="/Assets/DivideAndConquer%24outline_of_rec.png" width="600" height="200" align="center">
 
