@@ -11,3 +11,5 @@
 
 ![](/Assets/DivideAndConquer%24outline_of_rec.png)  
 
+<img src="/Assets/DivideAndConquer%24outline_of_rec.png" width="400" height="200" align="center">
+
