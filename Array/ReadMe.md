@@ -40,12 +40,16 @@
   > Explanation: n is 2, and the maximum sum of pairs is 4 = min(1, 2) + min(3, 4).
 
 - [sort array by parity](/Array/sort_array_by_parity.md)
-
   > 给定一个非负整数数组A，返回一个由A的所有偶数元素组成的数组，后跟A的所有奇数元素。   
     您可以返回满足此条件的任何答案数组。  
     Input: [3,1,2,4]  
     Output: [2,4,3,1]  
     The outputs [4,2,3,1], [2,4,1,3], and [4,2,1,3] would also be accepted.
+
+- [sort array by parity ii](/Array/sort_array_by_parity_ii.md)
+  > 给定一个非负整数的数组A，A中的一半整数是奇数，一半是偶数  
+    对数组进行排序，使得A[i]为奇数时，i为奇数; A[i]是偶数时，i是偶数  
+    [922. Sort Array By Parity II](https://leetcode.com/problems/sort-array-by-parity-ii/description/)
 
 - [Smallest Range I](/Array/smallest_range_i.md)
 

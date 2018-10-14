@@ -15,8 +15,7 @@ int arrayPairSum(vector<int>& a)
 {
 	int res = 0;
 	quickSort(a);
-	for(int i=0; i<a.size(); i += 2)
-		res += a[i];
+	for(int i=0; i<a.size(); i += 2)  res += a[i];
 	return res;
 }
 ```
