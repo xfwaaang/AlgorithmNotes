@@ -15,32 +15,32 @@ using namespace std;
 
 vector<int> numberOfLines(vector<int>& widths, string S)
 {
-        vector<int> a;
-        int units = 0;
-        int lines = 1;
-        int i = 0;
-        
-        while(i < S.size())
+    vector<int> a;
+    int units = 0;
+    int lines = 1;
+    int i = 0;
+    
+    while(i < S.size())
+    {
+        int curr = units + widths[S[i]-'a'];
+        if(curr <= 100)
         {
-            int curr = units + widths[S[i]-'a'];
-            if(curr <= 100)
-            {
-                units = curr;
-            }
-            else
-            {
-                units = widths[S[i]-'a'];
-                lines++;
-            }
-            
-            i++;
+            units = curr;
+        }
+        else
+        {
+            units = widths[S[i]-'a'];
+            lines++;
         }
         
-        a.push_back(lines);
-        a.push_back(units);
-        
-        return a;
- }
+        i++;
+    }
+    
+    a.push_back(lines);
+    a.push_back(units);
+    
+    return a;
+}
 
  int main()
  {

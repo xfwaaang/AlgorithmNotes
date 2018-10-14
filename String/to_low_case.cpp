@@ -21,12 +21,12 @@ string toLowCase(string str)
 	return str;
 }
 
-// string toLowCase(string str)
-// {
-// 	for(char& c : str)
-// 		if(c >= 'A' && c <= 'Z')	c += 32;
-// 	return str;
-// }
+string toLowCase(string str)
+{
+	for(char& c : str)
+		if(c >= 'A' && c <= 'Z')	c += 32;
+	return str;
+}
 
 
 int main()
