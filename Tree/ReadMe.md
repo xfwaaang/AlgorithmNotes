@@ -20,3 +20,6 @@
 - [Maximum Depth of N-ary Tree](/Tree/max_depth.md)
 	> 求n叉树的深度  
 	  [559. Maximum Depth of N-ary Tree of LeetCode](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/description/)
+
+- [Trim a Binary Search Tree](/Tree/trimBST.md)
+	> 给定一个平衡二叉树和上下界L、R，消减BST使得所有节点的值均位于[L, R]之间

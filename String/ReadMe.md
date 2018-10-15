@@ -14,3 +14,7 @@
 - [Shortest Distance to a Character](/String/shortestToChar.md)
 	> 给定一个字符串S和一个字符C，求出S中每个字符与C的最小距离  
 	  [821. Shortest Distance to a Character of LeetCode](https://leetcode.com/problems/shortest-distance-to-a-character/description/)
+
+- [Uncommon Words from Two Sentences](/String/uncommonFromSentences.md)
+	> 给定两个字符串语句A和B，单词以空格分开，若某个单词在其中一个语句中仅出现一次且不在另一个语句中出现  
+	  则该单词称为 uncommon word，求出所有的 uncommon word
