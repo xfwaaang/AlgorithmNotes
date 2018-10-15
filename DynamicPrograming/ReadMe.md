@@ -59,3 +59,9 @@
 
 - [最长公共子序列](/DynamicPrograming/lcs.md)
 	> 给定两个序列X和Y，求它们的最长公共子序列(未完成)
+
+- [矩阵连乘问题](/DynamicPrograming/matrix_chain_order.md)
+	> n 个矩阵相乘，最小化乘法运算次数
+
+- [钢条切割问题](/DynamicPrograming/steel_cut.md)
+	> 给定一段长度为n的钢条和一个价格表pi(i=1,2...n)，制定切割方案，使收益最大
