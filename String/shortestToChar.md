@@ -43,6 +43,9 @@ vector<int> shortestToChar(string S, char C)
 
 ##### 方法二
 
+设置 i 和 j，i 指向当前元素 S[k] 左边且距其最近的字符C的位置；j 指向 S[k] 右边且距其最近的字符C的位置  
+遍历 S，遇到字符 C，更新 i 和 j，S[k] 与 C 的最短距离为 min(k-i, j-k)
+
 ```
 vector<int> shortestToChar(string S, char C) 
 {

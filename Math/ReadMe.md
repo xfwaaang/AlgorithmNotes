@@ -31,5 +31,5 @@
 
 - [BinaryGap](/Math/binary_gap.md)
 	> 给定正整数N，找到并返回N的二进制表示中两个连续1之间的最长距离
-	  如果没有连续两个1，则返回0
+	  如果没有连续两个1，则返回0  
     [868. Binary Gap of LeetCode](https://leetcode.com/problems/binary-gap/description/)

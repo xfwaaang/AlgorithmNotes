@@ -3,7 +3,7 @@
 
 using namespace std;
 
-vector<int> shortestToChar(string S, char C) {
+vector<int> shortestToChar_1(string S, char C) {
         vector<int> res;
         
         int n = S.size();
@@ -32,6 +32,28 @@ vector<int> shortestToChar(string S, char C) {
         
         return res;
     }
+
+vector<int> shortestToChar(string S, char C) 
+{
+    int n = S.size();
+    vector<int> res(n, n);
+
+    printArray(res);
+
+    for (int i = 0; i < n; ++i) if (S[i] == C) res[i] = 0;
+
+    printArray(res);
+
+    for (int i = 1; i < n; ++i) res[i] = min(res[i], res[i - 1] + 1);
+
+    printArray(res);
+
+    for (int i = n - 2; i >= 0; --i) res[i] = min(res[i], res[i + 1] + 1);
+
+    printArray(res);
+    
+    return res;
+}
 
 int main()
 {
