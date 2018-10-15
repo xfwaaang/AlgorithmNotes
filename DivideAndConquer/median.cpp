@@ -60,7 +60,7 @@ int main()
 {
 	cout << "求两个有序数组的中位数" << endl;
 	vector<int> a{1, 2, 5};
-	vector<int> b{3, 4};
+	vector<int> b{3, 4, 6};
 	
 	cout << findMedianSortedArrays(a, b) << endl;
 	return 0;
