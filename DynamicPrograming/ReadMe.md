@@ -50,15 +50,12 @@
 #### 算法示例
 
 - [01背包问题](/DynamicPrograming/01bag.md)
-
 	> 有n个物品，它们具有各自的重量和价值，现有给定容量的背包  
 	  如何让背包里装入的物品具有最大的价值？
 
 - [爬楼梯问题](/DynamicPrograming/climb_stairs.md)
-
 	> 有一个n阶楼梯，每次只能走一阶楼梯或两阶楼梯  
 	  问爬到第n阶楼梯共有多少种走法？
 
 - [最长公共子序列](/DynamicPrograming/lcs.md)
-
 	> 给定两个序列X和Y，求它们的最长公共子序列(未完成)
