@@ -70,3 +70,46 @@ vector<int> shortestToChar(string S, char C)
     return res;
 }
 ```
+
+##### 方法三
+
+```
+vector<int> shortestToChar(string S, char C) 
+{
+    int n = S.size();
+    vector<int> res(n, n);
+    int pos = -n;
+
+    for (int i = 0; i < n; ++i) 
+    {
+        if (S[i] == C) pos = i;
+        res[i] = min(res[i], abs(i - pos));
+    }
+
+    for (int i = n - 1; i >= 0; --i) 
+    {
+        if (S[i] == C)  pos = i;
+        res[i] = min(res[i], abs(i - pos));
+    }
+
+    return res;
+}
+```
+
+##### 方法四
+
+```
+vector<int> shortestToChar(string S, char C) 
+{
+    int n = S.size();
+    vector<int> res(n, n);
+
+    for (int i = 0; i < n; ++i) if (S[i] == C) res[i] = 0;
+
+    for (int i = 1; i < n; ++i) res[i] = min(res[i], res[i - 1] + 1);
+
+    for (int i = n - 2; i >= 0; --i) res[i] = min(res[i], res[i + 1] + 1);
+    
+    return res;
+}
+```
