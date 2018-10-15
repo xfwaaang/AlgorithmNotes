@@ -1,5 +1,26 @@
 ### Divide and Conquer
 
+  将问题划分为多个子问题求解，分而治之，各个子问题相互独立
+
+#### 设计过程
+
+- Divide：整个问题划分为多个子问题
+- Conquer：求解各个子问题（递归调用子问题的算法）
+- Combine：合并子问题的解，形成原始问题的解
+
+#### 分析过程
+
+- 建立递归方程
+
+	T(n) = aT(n/b) + D(n) + C(n)  
+	- Divide时间复杂度：D(n)
+	- Conquer时间复杂度：aT(n/b)
+	- Combine时间复杂度：C(n)
+
+- 递归方程求解
+
+#### 算法示例
+
 - [求两个有序数组的中位数](/DivideAndConquer/median.md)
 	> [4. Median of Two Sorted Arrays of LeetCode](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)
 
