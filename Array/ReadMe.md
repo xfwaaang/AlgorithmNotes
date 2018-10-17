@@ -52,7 +52,9 @@
     [922. Sort Array By Parity II](https://leetcode.com/problems/sort-array-by-parity-ii/description/)
 
 - [Smallest Range I](/Array/smallest_range_i.md)
-
   > 给定一个整数数组A，对于每个整数A[i]，  
     我们可以选择任何x，其中-K <= x <= K，并将x加到A[i]。   
     得到数组B. 返回B的最大值和B的最小值之差。
+
+- [Reshape the Matrix](/Array/reshape_matrix.md)
+  > [566. Reshape the Matrix of LeetCode](https://leetcode.com/problems/reshape-the-matrix/)
