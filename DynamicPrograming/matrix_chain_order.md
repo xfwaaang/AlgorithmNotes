@@ -35,8 +35,8 @@
 - `m[i,j] = min(i<=k<j){m[i,k] + m[k+1,j] + ri*ck*cj},  i < j`
 - `m[i,j] = 0,  i = j`
 
-<img src="/Assets/matrix_chain_1.png", align="left">
-<img src="/Assets/matrix_chain_2.png", align="right">
+<img src="/Assets/matrix_chain_1.png" width="300" height="200" align="left">
+<img src="/Assets/matrix_chain_2.png" width="300" height="200" align="right">
 
 #### 代码实现
 
@@ -57,6 +57,6 @@ Matrix-Chain-Order(r)
 				if q<m[i, j] then
 					m[i,j]=q;
 					s[i,j]=k;
-					
+
 return m and s
 ```
