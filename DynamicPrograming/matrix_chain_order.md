@@ -22,7 +22,7 @@
 #### 解题思路
 
 令 `M1M2...Mk` 的最小乘法次数为 `m[1,k]`  
-`M(k+1)M(k+2)...Mn` 的最小采购法次数为 `m[k+1,n]`  
+`M(k+1)M(k+2)...Mn` 的最小乘法次数为 `m[k+1,n]`  
 则 `M1M2...Mn` 的最小乘法次数为 `m[1,k] + m[k+1, n] + r1*ck*cn`
 `r1,ck,cn` 分别表示 M1 的行数，Mk 的列数，Mn 的列数  
 
@@ -35,5 +35,28 @@
 - `m[i,j] = min(i<=k<j){m[i,k] + m[k+1,j] + ri*ck*cj},  i < j`
 - `m[i,j] = 0,  i = j`
 
+<img src="/Assets/matrix_chain_1.png", align="left">
+<img src="/Assets/matrix_chain_2.png", align="right">
+
 #### 代码实现
 
+伪代码
+```
+Matrix-Chain-Order(r)
+	n = length(r)；
+
+	for i=1 to n do
+		m[i, i] = 0;
+
+	for x=1 to n-1 do
+		for i=1 to n-x do
+			j = i + x;
+			m[i, j] = ∞;
+			for k=i to j-1 do
+				q = m[i, k] + m[k+1, j] + ri*ck*cj
+				if q<m[i, j] then
+					m[i,j]=q;
+					s[i,j]=k;
+					
+return m and s
+```
