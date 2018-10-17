@@ -35,8 +35,11 @@
 - `m[i,j] = min(i<=k<j){m[i,k] + m[k+1,j] + ri*ck*cj},  i < j`
 - `m[i,j] = 0,  i = j`
 
-<img src="/Assets/matrix_chain_1.png" width="300" height="200" align="left">
-<img src="/Assets/matrix_chain_2.png" width="300" height="200" align="right">
+<table>
+	<tr><img src="/Assets/matrix_chain_1.png" width="300" height="200" align="center"></tr>
+	<tr><img src="/Assets/matrix_chain_2.png" width="300" height="200" align="center"></tr>
+</table>
+
 
 #### 代码实现
 
@@ -46,17 +49,17 @@ Matrix-Chain-Order(r)
 	n = length(r)；
 
 	for i=1 to n do
-		m[i, i] = 0;
+	  m[i, i] = 0;
 
 	for x=1 to n-1 do
-		for i=1 to n-x do
-			j = i + x;
-			m[i, j] = ∞;
-			for k=i to j-1 do
-				q = m[i, k] + m[k+1, j] + ri*ck*cj
-				if q<m[i, j] then
-					m[i,j]=q;
-					s[i,j]=k;
+	  for i=1 to n-x do
+		j = i + x;
+		m[i, j] = ∞;
+		for k=i to j-1 do
+		  q = m[i, k] + m[k+1, j] + ri*ck*cj
+		  if q<m[i, j] then
+			 m[i,j]=q;
+			 s[i,j]=k;
 
 return m and s
 ```
