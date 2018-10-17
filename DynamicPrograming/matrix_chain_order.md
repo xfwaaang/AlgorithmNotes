@@ -36,8 +36,8 @@
 - `m[i,j] = 0,  i = j`
 
 <table>
-	<tr><img src="/Assets/matrix_chain_1.png" width="300" height="200" align="center"></tr>
-	<tr><img src="/Assets/matrix_chain_2.png" width="300" height="200" align="center"></tr>
+	<td><img src="/Assets/matrix_chain_1.png" width="300" height="200" align="center"></td>
+	<td><img src="/Assets/matrix_chain_2.png" width="300" height="200" align="center"></td>
 </table>
 
 
