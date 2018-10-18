@@ -9,3 +9,6 @@
       [476. Number Complement of LeetCode](https://leetcode.com/problems/number-complement/description/)
 
 - [计算x的二进制表示中1和0的个数](/BitManipulation/bit_count.md)
+
+- [Single Number](/BitManipulation/single_number.md)
+	> [136. Single Number of LeetCode](https://leetcode.com/problems/single-number/)

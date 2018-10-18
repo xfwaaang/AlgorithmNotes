@@ -23,3 +23,6 @@
 
 - [Trim a Binary Search Tree](/Tree/trimBST.md)
 	> 给定一个平衡二叉树和上下界L、R，消减BST使得所有节点的值均位于[L, R]之间
+
+- [Increasing Order Search Tree](/Tree/increasingbst.md)
+	> 按升序重排BST，所有节点的左子树均为空
