@@ -30,3 +30,25 @@ int maxSubArray(int A[], int n)
 }
 
 ```
+
+另一种写法
+```
+int maxSubArray(int A[], int n)
+{
+	int max = A[0];
+	int tmp = 0;
+
+	for(int i=0; i<n; ++i)
+	{
+		if(tmp > 0)
+			tmp += A[i];
+		else
+			tmp = A[i];
+
+		if(tmp > max)
+			max = tmp;
+	}
+
+	return max;
+}
+```
