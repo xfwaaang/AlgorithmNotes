@@ -8,6 +8,8 @@
 
 #### [DivideAndConquer](/DivideAndConquer/ReadMe.md)
 
+#### [GreedyAlgorithm](/GreedyAlgorithm/ReadMe.md)
+
 #### [Recursive](/Recursive/ReadMe.md)
 
 #### [Array](/Array/ReadMe.md)

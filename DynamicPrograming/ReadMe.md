@@ -57,11 +57,19 @@
 	> 有一个n阶楼梯，每次只能走一阶楼梯或两阶楼梯  
 	  问爬到第n阶楼梯共有多少种走法？
 
-- [最长公共子序列](/DynamicPrograming/lcs.md)
-	> 给定两个序列X和Y，求它们的最长公共子序列(未完成)
-
 - [矩阵连乘问题](/DynamicPrograming/matrix_chain_order.md)
 	> n 个矩阵相乘，最小化乘法运算次数
 
 - [钢条切割问题](/DynamicPrograming/steel_cut.md)
 	> 给定一段长度为n的钢条和一个价格表pi(i=1,2...n)，制定切割方案，使收益最大
+
+- [最长公共子序列](/DynamicPrograming/lcs.md)
+	> 给定两个序列X和Y，求它们的最长公共子序列  
+	  [POJ1458](http://poj.org/problem?id=1458)
+
+- [POJ1050](/DynamicPrograming/poj1050.md)
+	> 最大子矩阵和  
+	  [POJ1050](http://poj.org/problem?id=1050)
+
+- [最大算式](/DynamicPrograming/max_formula.md)
+	> n个1-9的数字，插入k个乘号和n-k-1个加号，求出最大的算式结果
