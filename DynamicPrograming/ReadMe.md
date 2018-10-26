@@ -79,3 +79,6 @@
 
 - [最大化所有词汇的质量和](/DynamicPrograming/max_words_quality.md)
 	> 将一个句子划分为若干词汇，假设可以用一个函数获得任意一词汇的质量，最大化所有词汇的质量和
+
+- [带权活动选择问题](/DynamicPrograming/weighted_activity.md)
+	> 在n个活动中选择一些活动，保证任意两个活动不相交，使得所有被选活动的权重和最大

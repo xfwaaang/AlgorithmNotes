@@ -11,7 +11,8 @@ quality(确实) + quality(在理) > quality(确)+quality(实在)+quality(理)
 设`y[1,n] = (y1,y2,...,yn)`表示一个长字符串句子，`x[i,j] = (xi,...,xj)`表示某词汇  
 `r(i)`表示`y[1,i]`某种分词下所有词汇最大的质量和  
 在`k`处字符分出一个词汇，`x[k,n]`，则  
-`r(n) = max(quality(x) + r(k-1))    1 <= k <= n`
+`r(n) = max(quality(x) + r(k-1)) ,   1 <= k <= n`  
+问题的最优解包含子问题的最优解且子问题具有重叠性
 
 #### 代码实现
 

@@ -9,8 +9,8 @@
 #### 解题思路
 设`A[i,j] = (ai,a[i+1],...,aj)`，`sum(i,j)`表示`A[i,j]`在某种划分下所有子序列最大值的最小和  
 在`k(i<=k<j)`处划分出一个子序列，得到`A[i,k]`，则  
-`sum(i,j) = min(max(A[i,k]) + sum(k+1,j), sum(i,j))    max(A[i,k]) < B, 1 <= i <= j <= n, i <= k < j`  
-`sum(1,n) = min(max(A[1,k]) + sum(k+1,n), sum(1,n))    max(A[1,k]) < B, 1 <= k < n, n >= 1`  
+`sum(i,j) = min(max(A[i,k]) + sum(k+1,j), sum(i,j)) ,    max(A[i,k]) < B, 1 <= i <= j <= n, i <= k < j`  
+`sum(1,n) = min(max(A[1,k]) + sum(k+1,n), sum(1,n)) ,    max(A[1,k]) < B, 1 <= k < n, n >= 1`  
 `sum(1,n)`的最优解包含`sum(k+1,n)`的最优解，  
 问题的最优解包含子问题的最优解，且划分的子问题具有重叠性
 
