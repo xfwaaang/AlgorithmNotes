@@ -77,5 +77,5 @@
 - [最小化所有子序列中最大值的和](/DynamicPrograming/mini_sum.md)
 	> 有一长度为N的整数序列，设计一种划分方法，最小化所有子序列中最大值的和
 
-- [最大化所有词汇的质量和](DynamicPrograming/max_words_quality.md)
+- [最大化所有词汇的质量和](/DynamicPrograming/max_words_quality.md)
 	> 将一个句子划分为若干词汇，假设可以用一个函数获得任意一词汇的质量，最大化所有词汇的质量和
