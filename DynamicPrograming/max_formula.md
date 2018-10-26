@@ -19,6 +19,8 @@
 
 #### 代码实现
 
+[code](/DynamicPrograming/max_formula.cpp)
+
 ```
 int solve(vector<int> a, int k)
 {
