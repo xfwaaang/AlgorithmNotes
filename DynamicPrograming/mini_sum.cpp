@@ -61,6 +61,8 @@ int solve(vector<int> A, int B)
 			}
 		}
 
+		// 若当前序列和不大于B，则其可划分为一个序列
+		// r[i] = max(A[1,i])
 		if(sum(A, 1, i) <= B)
 		{
 			r[i] = min(tmp, maxe(A, 1, i));

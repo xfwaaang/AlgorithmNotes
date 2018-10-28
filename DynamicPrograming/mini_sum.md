@@ -9,8 +9,8 @@
 #### 解题思路
 设`A[i,j] = (ai,a[i+1],...,aj)`，`r(i,j)`表示`A[i,j]`在某种划分下所有子序列最大值的最小和  
 在`k(i<=k<j)`处划分出一个子序列，得到`A[i,k]`，则  
-`r(i,j) = min{r(i,k) + max(A[k+1,j])} ,    sum(A[k+1,j]) < B, 1 <= i <= j <= n, i <= k < j`  
-`r(1,n) = min{r(1,k) + max(A[k+1,n])} ,    sum(A[k+1,n]) < B, 1 <= k < n, n >= 1          `  
+`r(i,j) = min{r(i,k) + max(A[k+1,j])} ,    sum(A[k+1,j]) <= B, 1 <= i <= j <= n, i <= k < j`  
+`r(1,n) = min{r(1,k) + max(A[k+1,n])} ,    sum(A[k+1,n]) <= B, 1 <= k < n, n >= 1          `  
 `r(1,n)`的最优解包含`r(1,k)`的最优解，  
 问题的最优解包含子问题的最优解，且划分的子问题具有重叠性
 
@@ -36,6 +36,8 @@ int solve(vector<int> A, int B)
 			}
 		}
 
+		// 若当前序列和不大于B，则其可划分为一个序列
+		// r[i] = max(A[1,i])
 		if(sum(A, 1, i) <= B)
 		{
 			r[i] = min(tmp, maxe(A, 1, i));
