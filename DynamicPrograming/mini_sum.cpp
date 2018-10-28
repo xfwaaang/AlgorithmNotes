@@ -7,11 +7,76 @@
 可将其划分成三个子序列(2,2,2)，(8,1,8)以及(2,1)
 则可满足每个子序列中整数和不大于17，所有子序列中最大值的和12为最终结果
 解题思路
-设A[i,j] = (ai,a[i+1],...,aj)，sum(i,j)表示A[i,j]在某种划分下所有子序列最大值的最小和
-在k(i<=k<j)处划分出一个子序列，得到A[i,k]，则
-sum(i,j) = min(max(A[i,k]) + sum(k+1,j), sum(i,j))  max(A[i,k]) < B, 1 <= i <= j <= n, i <= k < j
-sum(1,n) = min(max(A[1,k]) + sum(k+1,n), sum(1,n))  max(A[1,k]) < B, 1 <= k < n, n >= 1
-sum(1,n)的最优解包含sum(k+1,n)的最优解，
+设`A[i,j] = (ai,a[i+1],...,aj)`，`r(i,j)`表示`A[i,j]`在某种划分下所有子序列最大值的最小和  
+在`k(i<=k<j)`处划分出一个子序列，得到`A[i,k]`，则  
+`r(i,j) = min{r(i,k) + max(A[k+1,j])} ,    sum(A[k+1,j]) <= B, 1 <= i <= j <= n, i <= k < j`  
+`r(1,n) = min{r(1,k) + max(A[k+1,n])} ,    sum(A[k+1,n]) <= B, 1 <= k < n, n >= 1          `  
+`r(1,n)`的最优解包含`r(1,k)`的最优解，  
 问题的最优解包含子问题的最优解，且划分的子问题具有重叠性
 */
 
+#include<iostream>
+#include<vector>
+
+using namespace std;
+
+// 求子序列A[i,j] = (ai,a[i+1],...,aj)的和
+int sum(vector<int> A, int i, int j)
+{
+	int res = 0;
+	for(int k=i-1; k<j; ++k)
+		res += A[k];
+
+	return res;
+}
+// 求子序列A[i,j] = (ai,a[i+1],...,aj)的最大值
+int maxe(vector<int> A, int i, int j)
+{
+	int res = A[i-1];
+	for(int k=i; k<j; ++k)
+	{
+		if(A[k] > res)
+			res = A[k];
+	}
+
+	return res;
+}
+
+int solve(vector<int> A, int B)
+{
+	int n = A.size();
+	int r[n+1];
+	int maxs = sum(A, 1, n) + 1;
+
+	r[1] = A[0];
+
+	for(int i=2; i<=n; ++i)
+	{
+		int tmp = maxs;
+		for(int k=1; k<i; ++k)
+		{
+			if(sum(A, k+1, i) <= B)
+			{
+				tmp = min(tmp, r[k] + maxe(A, k+1, i));
+			}
+		}
+
+		if(sum(A, 1, i) <= B)
+		{
+			r[i] = min(tmp, maxe(A, 1, i));
+		}
+		else
+		{
+			r[i] = tmp;
+		}
+	}
+
+	return r[n];
+}
+
+int main()
+{
+	vector<int> A{2,2,2,8,1,8,2,1};
+	int B = 17;
+	cout << solve(A, B) << endl;
+}

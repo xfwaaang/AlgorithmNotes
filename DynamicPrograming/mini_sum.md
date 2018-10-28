@@ -7,15 +7,45 @@
 则可满足每个子序列中整数和不大于17，所有子序列中最大值的和12为最终结果
 
 #### 解题思路
-设`A[i,j] = (ai,a[i+1],...,aj)`，`sum(i,j)`表示`A[i,j]`在某种划分下所有子序列最大值的最小和  
+设`A[i,j] = (ai,a[i+1],...,aj)`，`r(i,j)`表示`A[i,j]`在某种划分下所有子序列最大值的最小和  
 在`k(i<=k<j)`处划分出一个子序列，得到`A[i,k]`，则  
-`sum(i,j) = min(max(A[i,k]) + sum(k+1,j), sum(i,j)) ,    max(A[i,k]) < B, 1 <= i <= j <= n, i <= k < j`  
-`sum(1,n) = min(max(A[1,k]) + sum(k+1,n), sum(1,n)) ,    max(A[1,k]) < B, 1 <= k < n, n >= 1`  
-`sum(1,n)`的最优解包含`sum(k+1,n)`的最优解，  
+`r(i,j) = min{r(i,k) + max(A[k+1,j])} ,    sum(A[k+1,j]) < B, 1 <= i <= j <= n, i <= k < j`  
+`r(1,n) = min{r(1,k) + max(A[k+1,n])} ,    sum(A[k+1,n]) < B, 1 <= k < n, n >= 1          `  
+`r(1,n)`的最优解包含`r(1,k)`的最优解，  
 问题的最优解包含子问题的最优解，且划分的子问题具有重叠性
 
 #### 代码实现
-[code](DynamicPrograming/mini_sum.cpp)
+[code](/DynamicPrograming/mini_sum.cpp)
 ```
+int solve(vector<int> A, int B)
+{
+	int n = A.size();
+	int r[n+1];
+	int maxs = sum(A, 1, n) + 1;
 
+	r[1] = A[0];
+
+	for(int i=2; i<=n; ++i)
+	{
+		int tmp = maxs;
+		for(int k=1; k<i; ++k)
+		{
+			if(sum(A, k+1, i) <= B)
+			{
+				tmp = min(tmp, r[k] + maxe(A, k+1, i));
+			}
+		}
+
+		if(sum(A, 1, i) <= B)
+		{
+			r[i] = min(tmp, maxe(A, 1, i));
+		}
+		else
+		{
+			r[i] = tmp;
+		}
+	}
+
+	return r[n];
+}
 ```
