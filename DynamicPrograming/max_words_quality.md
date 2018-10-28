@@ -9,14 +9,14 @@ quality(确实) + quality(在理) > quality(确)+quality(实在)+quality(理)
 
 #### 解题思路
 设`y[1,n] = (y1,y2,...,yn)`表示一个长字符串句子，`x[i,j] = (xi,...,xj)`表示某词汇  
-`r(i)`表示`y[1,i]`某种分词下所有词汇最大的质量和  
+`r(i)`表示`y[1,i]`某种分词方法下所有词汇最大的质量和  
 在`k`处字符分出一个词汇，`x[k,n]`，则  
-`r(n) = max(quality(x) + r(k-1)) ,   1 <= k <= n`  
+`r(n) = max(r(k-1) + quality(x)) ,   1 <= k <= n`  
 问题的最优解包含子问题的最优解且子问题具有重叠性
 
 #### 代码实现
 
-设函数`quality(y, i, j)`表示字符串第`i`个字符到第`j`个字符所组成词汇的质量
+设函数`quality(y, i, j)`表示字符串`y`的第`i`个字符到第`j`个字符所组成词汇的质量
 ```
 int solve(string y)
 {
@@ -31,7 +31,7 @@ int solve(string y)
 
 		for(int k=1; k<=i; ++k)
 		{
-			tmp = max(tmp, quality(y, k, i) + r[k-1]);
+			tmp = max(tmp, r[k-1] + quality(y, k, i));
 		}
 
 		r[i] = tmp;
