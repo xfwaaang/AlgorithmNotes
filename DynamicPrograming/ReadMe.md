@@ -67,9 +67,8 @@
 	> 给定两个序列X和Y，求它们的最长公共子序列  
 	  [POJ1458](http://poj.org/problem?id=1458)
 
-- [POJ1050](/DynamicPrograming/poj1050.md)
-	> 最大子矩阵和  
-	  [POJ1050](http://poj.org/problem?id=1050)
+- [最大子矩阵和](/DynamicPrograming/poj1050.md)
+	> [POJ1050](http://poj.org/problem?id=1050)
 
 - [最大算式](/DynamicPrograming/max_formula.md)
 	> n个1-9的数字，插入k个乘号和n-k-1个加号，求出最大的算式结果
