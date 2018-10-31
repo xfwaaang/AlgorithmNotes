@@ -16,10 +16,27 @@
 
 [code](/DynamicPrograming/weighted_activity.cpp)
 ```
+struct Activity
+{
+	int s;
+	int f;
+	int v;
+
+	const bool operator < (const Activity a) const
+	{
+		return f < a.f;
+	}
+
+	Activity(int s, int e, int w): s(s), f(e), v(w){}
+};
+```
+```
 int solve(vector<Activity> a)
 {
 	int n = a.size();
 	int r[n+1];
+
+	sort(a.begin(), a.end());
 
 	r[0] = 0;
 	r[1] = a[0].v;

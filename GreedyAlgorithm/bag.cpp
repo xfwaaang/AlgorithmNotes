@@ -15,7 +15,7 @@ struct Good
 	{
 		return p / w < g.p / g.w;
 	}
-}
+};
 
 // m为背包容量
 float solve(vector<Good> goods, int m)

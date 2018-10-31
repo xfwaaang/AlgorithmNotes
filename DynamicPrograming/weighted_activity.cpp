@@ -40,6 +40,8 @@ int solve(vector<Activity> a)
 	int n = a.size();
 	int r[n+1];
 
+	sort(a.begin(), a.end());
+
 	r[0] = 0;
 	r[1] = a[0].v;
 
@@ -91,7 +93,6 @@ int main()
 	cout << "带权活动的选择问题" << endl;
 
 	vector<Activity> a = randActivities();
-	sort(a.begin(), a.end());
 	printActivities(a);
 
 	cout << solve(a) << endl;

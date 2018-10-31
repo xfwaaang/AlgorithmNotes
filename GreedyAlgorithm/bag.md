@@ -10,6 +10,20 @@
 #### 代码实现
 
 [code](/GreedyAlgorithm/bag.cpp)
+```
+struct Good
+{
+	float p;	// 物品价值
+	float w;	// 物品重量
+
+	Good(float p, float w): p(p), w(w){}
+
+	const bool operator < (const Good g) const
+	{
+		return p / w < g.p / g.w;
+	}
+};
+```
 
 ```
 float solve(vector<Good> goods, int m)
