@@ -32,9 +32,8 @@
 
 ##### 算法示例
 
-- [poj2393]()
+- [背包问题](/GreedyAlgorithm/bag.md)
 
-- [poj1328]()
 
 
 
