@@ -32,6 +32,12 @@
 
 ##### 算法示例
 
+- [活动选择问题](/GreedyAlgorithm/activity_select.md)
+
+- [poj2393](/GreedyAlgorithm/poj2393.md)
+
+- [poj1328](/GreedyAlgorithm/poj1328.md)
+
 - [背包问题](/GreedyAlgorithm/bag.md)
 
 
