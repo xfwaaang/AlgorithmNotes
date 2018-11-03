@@ -42,7 +42,7 @@
 
 - [背包问题](/GreedyAlgorithm/bag.md)
 
--[最小化连线的长度](/GreedyAlgorithm/mini_length.md)
+- [最小化连线的长度](/GreedyAlgorithm/mini_length.md)
 
 
 
