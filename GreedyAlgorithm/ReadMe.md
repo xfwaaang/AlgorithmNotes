@@ -35,11 +35,14 @@
 - [活动选择问题](/GreedyAlgorithm/activity_select.md)
 
 - [poj2393](/GreedyAlgorithm/poj2393.md)
+	> [poj2393](http://poj.org/problem?id=2393)
 
 - [poj1328](/GreedyAlgorithm/poj1328.md)
+	> [poj1328](http://poj.org/problem?id=1328)
 
 - [背包问题](/GreedyAlgorithm/bag.md)
 
+-[最小化连线的长度](/GreedyAlgorithm/mini_length.md)
 
 
 
