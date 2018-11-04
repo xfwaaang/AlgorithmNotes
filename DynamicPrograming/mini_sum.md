@@ -16,7 +16,7 @@
 问题的最优解包含子问题的最优解，且划分的子问题具有重叠性
 
 #### 代码实现
-[code](/DynamicPrograming/mini_sum.cpp)
+[code](/DynamicPrograming/mini_sum.cpp)  
 sum函数求子序列A[i,j] = (ai,a[i+1],...,aj)的和  
 maxe函数求子序列A[i,j] = (ai,a[i+1],...,aj)的最大值
 ```
