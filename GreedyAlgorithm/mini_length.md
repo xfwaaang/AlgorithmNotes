@@ -5,9 +5,35 @@
 <img src="/Assets/mini_length_greedy.png" width="300" height="60" align="center">
 
 #### 解题思路
+不断地找当前最短的连线，并记录已经连过的点，将所有的连线加起来得到最终结果  
+目前不会证明，因此不知道是否正确
 
 #### 代码实现
 
+[code](/GreedyAlgorithm/mini_length.cpp)
 ```
+int solve(vector<int> a)
+{
+	int res = 0;
+	int n = a.size();
+	int j = 0;
+	bool flag[n] = {false};
 
+	for(int i=0; i<n; ++i)
+	{
+		// 如果当前点已被连接，直接进入下一次循环
+		if(flag[i])	continue;
+
+		j = i + 1;
+		// 寻找距离当前点a[i]最近且没有被连接的与当前点不同颜色的点
+		while(j < n && a[j] == a[i] || flag[j])	++j;
+		if(j == n)	break;
+
+		res += j - i;
+		flag[i] = true;
+		flag[j] = true;
+	}
+	
+	return res;
+}
 ```
