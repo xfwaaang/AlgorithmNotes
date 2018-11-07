@@ -1,6 +1,5 @@
 #include<iostream>
-#include"../util.h"
-
+#include<vector>
 using namespace std;
 
 int solve(vector<int> a)
@@ -23,6 +22,7 @@ int solve(vector<int> a)
 		cout << i << "," << j << endl;
 
 		res += j - i;
+		// i和j已被连接
 		flag[i] = true;
 		flag[j] = true;
 	}

@@ -30,6 +30,7 @@ int solve(vector<int> a)
 		if(j == n)	break;
 
 		res += j - i;
+		// i和j已被连接
 		flag[i] = true;
 		flag[j] = true;
 	}
