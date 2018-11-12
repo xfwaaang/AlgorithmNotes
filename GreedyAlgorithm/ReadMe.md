@@ -40,7 +40,7 @@
 - [poj1328](/GreedyAlgorithm/poj1328.md)
 	> [poj1328](http://poj.org/problem?id=1328)
 
-- [背包问题](/GreedyAlgorithm/bag.md)
+- [非01背包问题](/GreedyAlgorithm/bag.md)
 
 - [最小化连线的长度](/GreedyAlgorithm/mini_length.md)
 
