@@ -21,6 +21,7 @@
 #### 代码实现
 
 [code](/GreedyAlgorithm/mini_length.cpp)  
+
 方法一
 ```
 int solve(vector<int> a)
