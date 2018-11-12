@@ -4,7 +4,7 @@
 试设计一个算法求解该问题，并分析算法的正确性
 
 #### 解题思路
-将物品按单位价值排序，依次向背包中尝试添加具有最大单位价值的物品  
+将物品按单位价值从大到小排序，依次向背包中尝试添加具有最大单位价值的物品  
 若背包容量足够，则将整个物品加入，否则加入部分该物品
 
 #### 代码实现
@@ -32,7 +32,7 @@ float solve(vector<Good> goods, int m)
 	int curr_m = m;
 	int n = goods.size();
 
-	sort(goods.begin(), goods.end());
+	sort(goods.rbegin(), goods.rend());
 
 	for(int i=0; i<n; ++i)
 	{

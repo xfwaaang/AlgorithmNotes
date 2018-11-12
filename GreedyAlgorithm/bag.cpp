@@ -24,7 +24,7 @@ float solve(vector<Good> goods, int m)
 	int curr_m = m;
 	int n = goods.size();
 
-	sort(goods.begin(), goods.end());
+	sort(goods.rbegin(), goods.rend());
 
 	for(int i=0; i<n; ++i)
 	{
