@@ -33,3 +33,6 @@
 	> 给定正整数N，找到并返回N的二进制表示中两个连续1之间的最长距离
 	  如果没有连续两个1，则返回0  
     [868. Binary Gap of LeetCode](https://leetcode.com/problems/binary-gap/description/)
+
+- [二进制转十进制](/Math/binary2decimal.md)
+  > 输入一个仅含0或1数字的整数，将其表示的二进制转化为十进制
