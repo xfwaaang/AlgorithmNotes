@@ -17,7 +17,7 @@
 `dp(7) = dp(6) + 1 = 5`   `A[7] > A[6]`
 
 #### 代码实现
-[code](DynamicPrograming/lis.cpp)  
+[code](/DynamicPrograming/lis.cpp)  
 ```
 int solve(vector<int>& A)
 {
