@@ -14,6 +14,7 @@ int fun(int n, int c, int w[], int v[])
 	int a[n+1][c+1] = {};
 	for(int i=1; i<=c; ++i)
 	{
+		
 		for(int j=1; j<=n; ++j)
 		{
 			if(i < w[j-1])
