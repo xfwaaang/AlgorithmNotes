@@ -19,6 +19,7 @@ bool isPalindrome(int x)
 		reverse = reverse * 10 + tmp % 10;
 		tmp /= 10;
 	}
+	
 	return x == reverse;
 }
 
