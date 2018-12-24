@@ -36,4 +36,5 @@
 	> 给定𝑛座建筑物 𝐵[1, 2, … , 𝑛]，每个建筑物 𝐵[𝑖]表示为一个矩形，用三元组𝐵[𝑖]=(𝑎_𝑖,𝑏_𝑖,ℎ_𝑖)表示    
 	  其中𝑎_𝑖表示建筑左下顶点，𝑏_𝑖表示建筑的右下顶点，ℎ_𝑖表示建筑的高    
 	  请设计一个 𝑂(𝑛log𝑛)的算法求出这𝑛座建筑物的天际轮廓  
-	  [218. The Skyline Problem of LeetCode](https://leetcode.com/problems/the-skyline-problem/description/)
+	  [218. The Skyline Problem of LeetCode](https://leetcode.com/problems/the-skyline-problem/description/)  
+	  todo
