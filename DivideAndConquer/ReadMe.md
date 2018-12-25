@@ -38,3 +38,5 @@
 	  请设计一个 𝑂(𝑛log𝑛)的算法求出这𝑛座建筑物的天际轮廓  
 	  [218. The Skyline Problem of LeetCode](https://leetcode.com/problems/the-skyline-problem/description/)  
 	  todo
+
+- [求无序数组的第k小元素](/DivideAndConquer/find_k_th.md)
