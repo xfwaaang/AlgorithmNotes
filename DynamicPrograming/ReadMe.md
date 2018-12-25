@@ -77,7 +77,6 @@
 	> 有一长度为N的整数序列，设计一种划分方法，最小化所有子序列中最大值的和
 
 - [对一棵树进行着色](/DynamicPrograming/coloring_tree.md)
-	> todo
 
 - [最大化所有词汇的质量和](/DynamicPrograming/max_words_quality.md)
 	> 将一个句子划分为若干词汇，假设可以用一个函数获得任意一词汇的质量，最大化所有词汇的质量和
@@ -87,7 +86,4 @@
 
 - [最长非降子序列](/DynamicPrograming/lis.md)
 	> 求一个序列的最长非降子序列的长度
-
-- [具有最大和的子数组](/DynamicPrograming/max_subarray.md)
-  > 在数组（包含至少一个数字）中查找连续的子数组，使其和最大。   
   
