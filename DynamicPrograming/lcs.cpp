@@ -39,15 +39,10 @@ int LCSLength(string x, string y)
 			{
 				c[i][j] = c[i-1][j-1] + 1;
 			}
-			else if(c[i-1][j] >= c[i][j-1])
-			{
-				c[i][j] = c[i-1][j];
-			}
 			else
 			{
-				c[i][j] = c[i][j-1];
+				c[i][j] = max(c[i-1][j], c[i][j-1]);
 			}
-
 		}
 
 	}
