@@ -32,6 +32,6 @@ int maxSubArray(int A[], int n)
 
 int main()
 {
-	int A[] = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
-	cout << maxSubArray(A, 9) << endl;
+	int A[] = {-2, 1, -3, 4, -1, 2, 1};
+	cout << maxSubArray(A, 7) << endl;
 }

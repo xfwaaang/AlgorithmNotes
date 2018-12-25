@@ -2,14 +2,26 @@
 
 using namespace std;
 
-int sum(int A[], int s, int e)
+// 求数组第s - e个元素的最大子数组和，s最小为1
+int maxSubArray(int A[], int s, int e)
 {
-	int res = 0;
-	for(int i=s-1; i<=e-1; ++i)
+	if(s > e)
 	{
-		res += A[i];
+		return 0;
 	}
-	return res;
+
+	int sum = A[s-1];
+	int maxSum = sum;
+
+	for(int i=s; i<=e-1; ++i)
+	{
+		if(sum < 0)
+			sum = 0;
+		sum += A[i];
+		maxSum = max(sum, maxSum);
+	}
+
+	return maxSum;
 }
 
 // m <= n
@@ -19,16 +31,17 @@ int solve(int A[], int n, int m)
 	for (int i = 0; i <= n; ++i)
 	{
 		dp[i][0] = 0;
+		dp[i][1] = maxSubArray(A, 1, i);
 	}
 
-	for(int j=1; j<=m; ++j)
+	for(int j=2; j<=m; ++j)
 	{
-		for(int i=1; i<=n; ++i)
+		for(int i=j; i<=n; ++i)
 		{
 			int temp = -1000;
 			for(int k=j-1; k<=i-1; ++k)
 			{
-				temp = max(temp, dp[k][j-1] + sum(A, k+1, i));
+				temp = max(temp, dp[k][j-1] + maxSubArray(A, k+1, i));
 			}
 
 			dp[i][j] = temp;
@@ -40,6 +53,6 @@ int solve(int A[], int n, int m)
 
 int main()
 {
-	int A[] = {-2, 1, -3, 4, -1, 2, 1};
-	cout << solve(A, 7, 2) << endl;
+	int A[] = {-2, 1, -3, 4, -1, 2, 1, -3, 2};
+	cout << solve(A, 9, 3) << endl;
 }
