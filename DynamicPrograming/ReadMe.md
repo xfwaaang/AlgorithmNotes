@@ -88,6 +88,6 @@
 - [最长非降子序列](/DynamicPrograming/lis.md)
 	> 求一个序列的最长非降子序列的长度
 
-- [具有最大和的子数组](/Array/max_subarray.md)
+- [具有最大和的子数组](/DynamicPrograming/max_subarray.md)
   > 在数组（包含至少一个数字）中查找连续的子数组，使其和最大。   
   
