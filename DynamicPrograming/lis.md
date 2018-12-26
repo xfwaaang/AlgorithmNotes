@@ -6,8 +6,8 @@
 #### 解题思路
 用dp(i)表示前i个数的最长非降子序列的长度  
 ``` 
-dp(i) = max(i <= j < i){ dp(j) + 1 }      , A[j] <= A[i]
-dp(i) = max(i <= j < i){ dp(j) }          , A[j] > A[i] 
+dp(i) = max(1 <= j < i){ dp(j) + 1 }      , A[j] <= A[i]
+dp(i) = max(1 <= j < i){ dp(j) }          , A[j] > A[i] 
 ```
   
 #### 代码实现
