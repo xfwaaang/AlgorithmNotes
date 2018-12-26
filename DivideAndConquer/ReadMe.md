@@ -41,3 +41,5 @@
 
 - [求无序数组的第k小元素](/DivideAndConquer/find_k_th.md)
 
+- [最大子数组和](/DivideAndConquer/max_subarray.md)
+

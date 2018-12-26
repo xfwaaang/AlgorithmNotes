@@ -14,7 +14,7 @@
   
 #### 代码实现
 
-[源代码](/Array/max_subarray.cpp)
+[源代码](/GreedyAlgorithm/max_subarray.cpp)
 
 ```
 int maxSubArray(int A[], int n)
