@@ -92,3 +92,6 @@
 
 - [最大m子段和](/DynamicPrograming/max_m_subarray.md)  
 	> 给定n个数，选择m个不相交的子段，使得所有子段和最大
+
+- [有序合并数组](/DynamicPrograming/merge_array.md)
+	> 给定n个数，每次只能合并相邻的两个数，合并的代价是两个数之和，两个数合并得到的数为两个数之和，求合并所有数的最小代价
