@@ -2,15 +2,17 @@
 
 常见算法的实现与测试 - C++
 
-#### [Sort](/Sort/ReadMe.md)
+#### [DivideAndConquer](/DivideAndConquer/ReadMe.md)
 
 #### [DynamicPrograming](/DynamicPrograming/ReadMe.md)
 
-#### [DivideAndConquer](/DivideAndConquer/ReadMe.md)
-
 #### [GreedyAlgorithm](/GreedyAlgorithm/ReadMe.md)
 
+#### [Backtracking](/BacktrackingAlgorithm/Backtracking.md)
+
 #### [Recursive](/Recursive/ReadMe.md)
+
+#### [Sort](/Sort/ReadMe.md)
 
 #### [Array](/Array/ReadMe.md)
 
