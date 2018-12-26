@@ -59,7 +59,6 @@ double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2)
 }
 
 // 方法二
-// bug
 int solve(int nums1[], int nums2[], int s1, int e1, int s2, int e2)
 {
 	int m1 = (s1 + e1) / 2;
@@ -67,36 +66,35 @@ int solve(int nums1[], int nums2[], int s1, int e1, int s2, int e2)
 	int a = nums1[m1];
 	int b = nums2[m2];
 
-	if(s1 == e1)
+	if(s1 == e1 || s2 == e2 || a == b)
 	{
 		return (a + b) / 2;
 	}
-
-	if(a == b)
-	{
-		return a;
-	}
-	else if(a < b)
-	{
-		return solve(nums1, nums2, m1, e1, s2, m2);
-	}
 	else
 	{
-		return solve(nums1, nums2, s1, m1, m2, e2);
+		// 待讨论
+		if(a < b)
+		{
+			return solve(nums1, nums2, m1 + 1, e1, s2, m2 - ((s2 + e2) % 2 ? 0 : 1));
+		}
+		else
+		{
+			return solve(nums1, nums2, s1, m1 - ((s1 + e1) % 2 ? 0 : 1), m2 + 1, e2);
+		}
 	}
 }
 
 int main()
 {
 	cout << "求两个有序数组的中位数" << endl;
-	vector<int> a{1, 2, 5, 8};
+	vector<int> a{1, 2, 5};
 	vector<int> b{3, 4, 6};
 	
 	cout << findMedianSortedArrays(a, b) << endl;
 
-	int nums1[] = {1, 2, 5, 8};
+	int nums1[] = {1, 2, 5};
 	int nums2[] = {3, 4, 6};
-	// cout << solve(nums1, nums2, 0, 2, 0, 2) << endl;
+	cout << solve(nums1, nums2, 0, 2, 0, 2) << endl;
 
 	return 0;
 }
