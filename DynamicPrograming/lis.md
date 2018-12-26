@@ -9,7 +9,7 @@
 dp(i) = max(i <= j < i){dp(j) + 1}      , A[j] <= A[i]
 dp(i) = max(i <= j < i){dp(j)}          , A[j] > A[i] 
 ```
-
+  
 #### 代码实现
 [code](/DynamicPrograming/lis.cpp)  
 ```
