@@ -6,12 +6,14 @@
 请设计一种方法求解带权活动选择问题
 
 #### 解题思路
-<!-- 对所有活动按结束时间进行排序  
+对所有活动按结束时间进行排序  
 设`dp(i)`表示活动`a_1`到`a_i`所选活动的最优解  
 此时分为两种情况选活动`a_i`和不选活动`a_i`   
-`dp(i) = max{dp(i-1), dp(k) + v_i} ，  0 < k < i `   
+```
+dp(i) = max{dp(i-1), dp(k) + v_i} ，  0 < k < i
+```
 `a_k`为距离`a_i`最近且与其不相交的活动  
- -->
+
 #### 代码实现
 
 [code](/DynamicPrograming/weighted_activity.cpp)
@@ -31,6 +33,25 @@ struct Activity
 };
 ```
 ```
+int solve(vector<Activity> a)
+{
+	int n = a.size();
+	int r[n+1];
 
+	sort(a.begin(), a.end());
+
+	r[0] = 0;
+	r[1] = a[0].v;
+
+	for(int i=2; i<=n; ++i)
+	{
+		int k = i - 1;
+		while(k > 0 && a[k-1].f > a[i-1].s)	
+			--k;
+		r[i] = max(r[i-1], r[k] + a[i-1].v);
+	}
+
+	return r[n];
+}
 ```
 
