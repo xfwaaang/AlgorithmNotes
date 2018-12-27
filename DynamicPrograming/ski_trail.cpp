@@ -13,7 +13,7 @@ int lis(vector<int>& A)
 	{
 		for(int j=1; j<=i-1; ++j)
 		{
-			if(A[i] >= A[j])
+			if(A[i-1] >= A[j-1])
 			{
 				dp[i] = max(dp[i], dp[j] + 1);
 			}
@@ -33,6 +33,7 @@ int solve(vector<int>& A)
 	int res = 2 * n;
 	for(int k=1; k<n; ++k)
 	{
+		// bug
 		vector<int> B(A.begin(), A.begin() + k);
 		vector<int> C(A.rbegin(), A.rend() - k);
 

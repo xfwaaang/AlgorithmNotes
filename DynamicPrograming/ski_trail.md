@@ -61,7 +61,7 @@ int lis(vector<int>& A)
 	{
 		for(int j=1; j<=i-1; ++j)
 		{
-			if(A[i] >= A[j])
+			if(A[i-1] >= A[j-1])
 			{
 				dp[i] = max(dp[i], dp[j] + 1);
 			}

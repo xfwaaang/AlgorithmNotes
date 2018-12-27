@@ -50,9 +50,10 @@ int solve(vector<int>& A)
 
 int main()
 {
-	vector<int> A{5, 3, 4, 6, 2, 7, 8};
+	// vector<int> A{5, 3, 4, 6, 2, 7, 8};
 	// vector<int> A{5, 3, 4, 4, 8, 6, 7, 4, 8, 8, 9};
 	// vector<int> A{5};
+	vector<int> A{1, 2, 6, 4, 5};
 	cout << solve(A) << endl;
 	cout << solve_1(A) << endl;
 }
