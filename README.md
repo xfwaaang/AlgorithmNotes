@@ -26,7 +26,5 @@
 
 #### [BitManipulation](/BitManipulation/ReadMe.md)
 
-#### [ToDo](/ToDo.md)
-
 :+1::+1:
 
