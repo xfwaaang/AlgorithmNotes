@@ -8,9 +8,9 @@
 
 #### [GreedyAlgorithm](/GreedyAlgorithm/ReadMe.md)
 
-#### [Backtracking](/Backtracking/ReadMe.md)
+#### [Backtracking&Recursive](/BacktrackingRecursive/ReadMe.md)
 
-#### [Recursive](/Recursive/ReadMe.md)
+<!-- #### [Recursive](/Recursive/ReadMe.md) -->
 
 #### [Sort](/Sort/ReadMe.md)
 

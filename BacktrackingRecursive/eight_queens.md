@@ -7,7 +7,7 @@
 
 #### 代码实现
 
-[code](/Backtracking/eight_queens.cpp)
+[code](/BacktrackingRecursive/eight_queens.cpp)
 
 ```
 #include<iostream>
