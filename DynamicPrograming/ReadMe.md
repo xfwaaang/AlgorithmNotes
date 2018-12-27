@@ -85,7 +85,7 @@
 	> 在n个活动中选择一些活动，保证任意两个活动不相交，使得所有被选活动的权重和最大
 
 - [最长非降子序列](/DynamicPrograming/lis.md)
-	> 求一个序列的最长非降子序列的长度
+	> 求一个序列的最长非降子序列的长度  
 	  有问题，todo
 
 - [编辑距离](/DynamicPrograming/edit_distance.md)
