@@ -48,9 +48,7 @@
 	> 在数组（包含至少一个数字）中查找连续的子数组，使其和最大。   
 
 - [任意顺序合并数组](/GreedyAlgorithm/merge_array.md)
-	> todo
 
 - [消减数字](/GreedyAlgorithm/remove_digtal.md)
-	> todo
 
 
