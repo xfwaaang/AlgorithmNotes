@@ -10,7 +10,7 @@
 4. 若`pos > k`，则第k小元素一定在数组左半部分，即求`A[0:pivot-1]`的第`k`小元素，递归执行第`1`步
 
 理想的情况下，`T(n) = T(n/2) + O(n)`  
-利用`master`定理求出时间复杂度：O(n)
+利用`master`定理求出时间复杂度：`O(n)`
 
 #### 代码实现
 [code](/DivideAndConquer/find_k_th.cpp)  
