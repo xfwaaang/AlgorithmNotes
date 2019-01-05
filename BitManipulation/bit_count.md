@@ -27,8 +27,6 @@ int binary0num(int x)
 	{
 		x = x | (x+1);
 		num++;
-		num++;
-		num++;
 	}
 
 	return num;
