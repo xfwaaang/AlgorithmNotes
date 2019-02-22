@@ -1,2 +1,6 @@
 *.exe
-/Temp
+# 忽略Temp文件夹
+Temp/
+
+# 忽略当前目录下的文件Temp
+# /Temp
