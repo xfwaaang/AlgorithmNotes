@@ -5,45 +5,30 @@
 
 using namespace std;
 
- bool isPrime(int k)
-    {
-        if(k < 2)
-            return false;
-
-        for(int i=2; i<=k/2; ++i)
+class Solution {
+public:
+    vector<int> v(10);
+    bool canWinNim(int n, int count = 0) {
+        if(n <= 3)
         {
-            if(k % i == 0)  return false; 
+            if(count % 2 == 1)
+                return false;
+            else
+                return true;
         }
-        
-        return true;
+        return canWinNim(n-1, count+1) || canWinNim(n-2, count+1) || canWinNim(n-3, count+1);
     }
-    
-    int countPrimeSetBits(int L, int R) {
-        int count = 0;
-        int i = 0;
-        int tmp = 0;
+};
 
-        for(int k = L; k<=R; ++k)
-        {
-            i = 0;
-            tmp = k;
-            while(tmp)
-            {
-                i += tmp % 2;
-                tmp >>= 1;
-            }
-            
-            if(isPrime(i))  count++;
-        }
-        
-        return count;
-    }
-int main()
-{
-    cout << countPrimeSetBits(842, 888) << endl;
-    for(int i=0; i<=100; ++i)
-    {
-        if(isPrime(i))
-            cout << i << " ";
-    }
+int stringToInteger(string input) {
+    return stoi(input);
+}
+
+string boolToString(bool input) {
+    return input ? "True" : "False";
+}
+
+int main() {
+    vector<int> v(10, 1);
+    return 0;
 }
