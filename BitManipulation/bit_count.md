@@ -5,7 +5,7 @@
 
 [code](/Math/bit_count.cpp)
 
-```
+```cpp
 int binary1num(int x)
 {
 	int num = 0;

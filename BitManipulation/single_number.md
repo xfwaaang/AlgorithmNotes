@@ -13,7 +13,7 @@
 
 #### 代码实现
 
-```
+```cpp
 int singleNumber(vector<int>& nums) 
 {
     int res = 0;

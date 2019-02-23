@@ -19,7 +19,7 @@
 [code](/DynamicPrograming/mini_sum.cpp)  
 `sum`函数求子序列`A[i,j] = (ai,a[i+1],...,aj)`的和  
 `maxe`函数求子序列`A[i,j] = (ai,a[i+1],...,aj)`的最大值
-```
+```cpp
 int solve(vector<int> A, int B)
 {
 	int n = A.size();

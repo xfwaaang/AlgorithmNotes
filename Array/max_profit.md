@@ -14,7 +14,7 @@
 
 判断相邻元素是否递增，因为连续递增可以看作一次买入卖出操作，统计所有递增量
 
-```
+```cpp
 int maxProfit(vector<int> &prices)
 {
 	int res = 0;

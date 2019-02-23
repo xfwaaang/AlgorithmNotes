@@ -9,7 +9,7 @@
 
 [code](/String/lines_of_string.cpp)
 
-```
+```cpp
 vector<int> numberOfLines(vector<int>& widths, string S)
 {
     vector<int> a;

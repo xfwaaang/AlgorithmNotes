@@ -11,7 +11,7 @@
 
 #### 代码实现
 伪代码
-```
+```cpp
 Greedy-Activity-Selector(S, F)
   n = length(S);
   A = {1};

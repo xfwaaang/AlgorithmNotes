@@ -5,7 +5,7 @@
 
 [code](/Math/is_palindrome.cpp)
 
-```
+```cpp
 bool isPalindrome(int x)
 {
 	if(x < 0)

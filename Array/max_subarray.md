@@ -16,7 +16,7 @@
 
 [源代码](/Array/max_subarray.cpp)
 
-```
+```cpp
 int maxSubArray(int A[], int n)
 {
 	int sum = A[0];
@@ -34,7 +34,7 @@ int maxSubArray(int A[], int n)
 ```
 
 另一种写法
-```
+```cpp
 int maxSubArray(int A[], int n)
 {
 	int max = A[0];

@@ -9,7 +9,7 @@ The outputs [4,2,3,1], [2,4,1,3], and [4,2,1,3] would also be accepted.
 
 [源代码](/Array/sort_array_by_parity.cpp)
 
-```
+```cpp
 vector<int> sortArrayByParity(vector<int> &A)
 {
 	int l = 0;

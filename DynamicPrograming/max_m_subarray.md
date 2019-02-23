@@ -15,7 +15,7 @@ dp(i,j) = max(j-1 <= k < i){ dp(k,j-1) + maxSubArray(A, k+1, i) }
 
 [code](/DynamicPrograming/max_m_subarray.cpp)
 
-```
+```cpp
 int solve(int A[], int n, int m)
 {
 	int dp[n+1][m+1];
@@ -43,7 +43,7 @@ int solve(int A[], int n, int m)
 }
 ```
 
-```
+```cpp
 int maxSubArray(int A[], int s, int e)
 {
 	if(s > e)

@@ -16,7 +16,7 @@ dp(i,j) = sum(i,j)		i+1 = j
 
 [code](/DynamicPrograming/merge_array.cpp)
 
-```
+```cpp
 int solve(int A[], int n)
 {
 	int dp[n+1][n+1];
@@ -52,7 +52,7 @@ int solve(int A[], int n)
 	return dp[1][n];
 }
 ```
-```
+```cpp
 int sum(int A[], int s, int e)
 {
 	int res = 0;

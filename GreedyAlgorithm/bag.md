@@ -10,7 +10,7 @@
 #### 代码实现
 
 [code](/GreedyAlgorithm/bag.cpp)
-```
+```cpp
 struct Good
 {
 	float p;	// 物品价值
@@ -25,7 +25,7 @@ struct Good
 };
 ```
 
-```
+```cpp
 float solve(vector<Good> goods, int m)
 {
 	int res = 0;

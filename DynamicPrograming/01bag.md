@@ -33,7 +33,7 @@ dp(n,c) = max{ dp(n-1,c), dp(n-1,c-s(n,j)) + v(n,j) }		c > s(n,j) && 1 <= j <= m
 [code](/DynamicPrograming/01bag.cpp)
 
 ##### 问题一
-```
+```cpp
 int solve(int n, int c, int w[], int v[])
 {
 	int dp[n+1][c+1];
@@ -69,7 +69,7 @@ int solve(int n, int c, int w[], int v[])
 
 ##### 问题二
 
-```
+```cpp
 int solve(int n, int c, int m, vector<vector<int>>& s, vector<vector<int>>& v)
 {
 	int dp[n+1][c+1];

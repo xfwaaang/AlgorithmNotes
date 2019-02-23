@@ -5,7 +5,7 @@
 
 [code](/Recursive/print_digit_reverse.cpp)
 
-```
+```cpp
 void printDigitReverse(unsigned int n)
 {
 	cout << n % 10 ;

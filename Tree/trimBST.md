@@ -3,7 +3,7 @@
 
 #### 代码实现
 
-```
+```cpp
 struct TreeNode 
 {
 	int val;
@@ -13,7 +13,7 @@ struct TreeNode
 };
 ```
 
-```
+```cpp
 TreeNode* trimBST(TreeNode* root, int L, int R) 
 {
     if(root == NULL)  return NULL;

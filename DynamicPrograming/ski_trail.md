@@ -33,7 +33,7 @@ dp(n) = min(1 <= k < n){ ( k - lis(A[1:k]) ) + ( n - k - lis(A[n:k+1]) )}
 
 [code](/DynamicPrograming/ski_trail.cpp)
 
-```
+```cpp
 int solve(vector<int>& A)
 {
 	int n = A.size();
@@ -50,7 +50,7 @@ int solve(vector<int>& A)
 }
 ```
 
-```
+```cpp
 // 最长非降子序列
 int lis(vector<int>& A)
 {

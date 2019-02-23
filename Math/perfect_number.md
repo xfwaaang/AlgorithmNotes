@@ -9,7 +9,7 @@ Explanation: 28 = 1 + 2 + 4 + 7 + 14
 
 [code](/Math/perfect_number.cpp)
 
-```
+```cpp
 bool isPerfectNumber(int x)
 {
 	if(x == 1)

@@ -8,7 +8,7 @@
 
 递归
 
-```
+```cpp
 int fib_recursive(int n){
     if(n == 0)
         return 0;
@@ -21,7 +21,7 @@ int fib_recursive(int n){
 
 迭代
 
-```
+```cpp
 int fib_iterative(int n){
     if(n == 0)
         return 0;

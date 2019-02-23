@@ -44,7 +44,7 @@
 #### 代码实现
 
 伪代码
-```
+```cpp
 Matrix-Chain-Order(r)
 	n = length(r)；
 

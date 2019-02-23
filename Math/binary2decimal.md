@@ -3,7 +3,7 @@
 
 #### 代码实现
 [code](/Math/binary2decimal.cpp)
-```
+```cpp
 int solve(int a)
 {
 	int res = 0;

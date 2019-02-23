@@ -6,7 +6,7 @@
 
 即求A和B中，出现一次的单词
 
-```
+```cpp
 vector<string> uncommonFromSentences(string A, string B) 
 {
     vector<string> res;

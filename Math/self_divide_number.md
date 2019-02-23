@@ -8,7 +8,7 @@
 
 [code](/Math/self_divide_number.cpp)
 
-```
+```cpp
 bool isSelfDividingNumber(int k)
 {
 	int tmp = k;

@@ -20,7 +20,7 @@ c[i][j] =  c[i-1][j-1] + 1             i,j>0, xi = yj
 
 [code](/DynamicPrograming/lcs.cpp)
 
-```
+```cpp
 int LCSLength(string x, string y)
 {
 	int m = x.size();

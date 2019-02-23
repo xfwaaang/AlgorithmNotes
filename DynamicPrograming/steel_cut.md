@@ -19,7 +19,7 @@
 [code](/DynamicPrograming/steel_cut.cpp)
 
 自底向上迭代方法
-```
+```cpp
 int cut(vector<int> p, int n)
 {
 	vector<int> r(n + 1);
@@ -39,7 +39,7 @@ int cut(vector<int> p, int n)
 ```
 
 递归备忘录方法
-```
+```cpp
 int cut_2(vector<int> p, int n, vector<int>& r)
 {
 	if(n == 0)	return 0;

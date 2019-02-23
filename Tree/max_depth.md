@@ -5,7 +5,7 @@
 
 #### 代码实现
 
-```
+```cpp
 class Node 
 {
 public:
@@ -21,7 +21,7 @@ public:
 };
 ```
 
-```
+```cpp
 int maxDepth(Node* root) 
 {
     if(!root)   return 0;
@@ -37,7 +37,7 @@ int maxDepth(Node* root)
 求二叉树的深度
 [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
 
-```
+```cpp
 struct TreeNode 
 {
     int val;
@@ -48,7 +48,7 @@ struct TreeNode
 ```
 
 递归
-```
+```cpp
 int maxDepth(TreeNode* root) 
 {
     if(root == NULL)    return 0;
@@ -63,7 +63,7 @@ int maxDepth(TreeNode *root)
 
 迭代
 
-```
+```cpp
 int maxDepth(TreeNode* root) 
 {
     if(root == NULL)    return 0;

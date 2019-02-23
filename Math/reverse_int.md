@@ -7,7 +7,7 @@ ex：x = -918，return -819
 
 [code](/Math/reverse_int.cpp)
 
-```
+```cpp
 int reverse(int x)
 {
 	int temp = abs(x);

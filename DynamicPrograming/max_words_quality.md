@@ -17,7 +17,7 @@ quality(确实) + quality(在理) > quality(确)+quality(实在)+quality(理)
 #### 代码实现
 
 设函数`quality(y, i, j)`表示字符串`y`的第`i`个字符到第`j`个字符所组成词汇的质量
-```
+```cpp
 int solve(string y)
 {
 	int n = y.size();

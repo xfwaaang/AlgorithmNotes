@@ -6,7 +6,7 @@
 
 [code](/Linklist/link_list_has_cycle.cpp)
 
-```
+```cpp
 struct ListNode
 {
 	int val;

@@ -14,7 +14,7 @@ Explanation: [4,7,2,5], [2,5,4,7], [2,7,4,5] would also have been accepted.
 参考：[sort_array_by_parity](/Array/sort_array_by_parity.cpp)
 2. 交换A前半部分奇数位置和后半部分偶数位置的元素
 
-```
+```cpp
 vector<int> sortArrayByParityII(vector<int>& A) 
 {
     int i = 0;
@@ -39,7 +39,7 @@ vector<int> sortArrayByParityII(vector<int>& A)
 遍历数组A，若A[i]为偶数，则i+2；若A[j]为奇数，则j+2  
 遇到不满足条件的i和j，交换i和j两个位置的元素
 
-```
+```cpp
 vector<int> sortArrayByParityII(vector<int>& A) 
 {
     int i = 0;

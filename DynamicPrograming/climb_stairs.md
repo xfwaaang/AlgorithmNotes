@@ -11,7 +11,7 @@
 
 [code](/DynamicPrograming/climb_stairs.cpp)
 
-```
+```cpp
 int climbStairs(int n)
 {
 	if(n < 1)

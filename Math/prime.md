@@ -8,7 +8,7 @@
 最简单的方法  
 若n不能被2至n-1之间的任意一个数整除则为质数
 
-```
+```cpp
 bool isPrime(int n){
     if(n < 2)
         return false;
@@ -25,7 +25,7 @@ bool isPrime(int n){
 降低一些复杂度  
 计算至n/2或sqrt（n），即可判断是否为质数
 
-```
+```cpp
 bool isPrime_other(int n){
     if(n < 2)
         return false;

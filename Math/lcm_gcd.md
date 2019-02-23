@@ -15,7 +15,7 @@
 4. 若k <= a(或b)，执行 2
 5. 若k > a（或b），则t即为最大公约数
 
-```
+```cpp
 int gcd_exhaustion(int a, int b)
 {
 	if(a == 0)
@@ -40,7 +40,7 @@ int gcd_exhaustion(int a, int b)
 2. 若a、b能同时被k整除，则k为最大公约数
 3. k--，执行 2
 
-```
+```cpp
 int gcd_exhaustion_better(int a, int b)
  {
 	if(a == 0)
@@ -65,7 +65,7 @@ int gcd_exhaustion_better(int a, int b)
 
 - 迭代
 
-```
+```cpp
 int gcd_divide_iterative(int a, int b)
 {
 	if(a == 0)
@@ -87,7 +87,7 @@ int gcd_divide_iterative(int a, int b)
 
 - 递归
 
-```
+```cpp
 int gcd_divide_recursive(int a, int b)
 {
 	if(a == 0)
@@ -107,7 +107,7 @@ int gcd_divide_recursive(int a, int b)
 3. 若a = b，a（b）即为最大公约数
 4. 若a ！= b，执行 1
 
-```
+```cpp
 int gcd_subtraction(int a, int b)
 {
 	if(a == 0)

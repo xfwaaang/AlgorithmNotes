@@ -15,7 +15,7 @@
 [code](/Recursive/hanoi.cpp)
 
 
-```
+```cpp
 enum tower
 {
 	A = 'X',

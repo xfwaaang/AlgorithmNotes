@@ -19,7 +19,7 @@
 
 [源代码](/DivideAndConquer/reverse_pair.cpp)
 
-```
+```cpp
 bool isAlpha(char c)
 {
     if(c >= 'a' && c <= 'z')

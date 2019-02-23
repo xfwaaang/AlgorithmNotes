@@ -14,7 +14,7 @@ Output: Node 4 from this list (Serialization: [4,5,6])
 
 [code](/Linklist/middle_node.cpp)
 
-```
+```cpp
 struct ListNode
 {
 	int val;

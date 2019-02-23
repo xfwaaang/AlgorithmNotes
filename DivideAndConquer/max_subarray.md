@@ -13,7 +13,7 @@
 
 [code](/DivideAndConquer/max_subarray.cpp)
 
-```
+```cpp
 int solve(int A[], int s, int e)
 {
 	if(s == e)
@@ -30,7 +30,7 @@ int solve(int A[], int s, int e)
 }
 ```
 
-```
+```cpp
 int merge(int A[], int s, int m, int e)
 {
 	int sum = A[m];

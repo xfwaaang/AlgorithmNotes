@@ -18,7 +18,7 @@ C(m,n) = C(m,n-1) + C(m-1,n-1)
 递归算法  
 `C(m,n) = C(m,n-1) + C(m-1,n-1)`
 
-```
+```cpp
 int fun(int m, int n)
 {
 	if(m > n)
@@ -39,7 +39,7 @@ int fun(int m, int n)
 迭代算法  
 `C(m,n) = n! / (m!(n-m)!)`
 
-```
+```cpp
 /*
 求n的阶乘n!
 */

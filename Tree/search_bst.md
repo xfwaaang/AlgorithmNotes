@@ -6,7 +6,7 @@
 
 [源代码](/Tree/search_bst.cpp)
 
-```
+```cpp
 struct TreeNode
 {
 	int val;

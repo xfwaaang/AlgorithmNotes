@@ -20,7 +20,7 @@ T(n)=2T(n/2) + O(n)
 
 [源代码](/DivideAndConquer/reverse_pair.cpp)
 
-```
+```cpp
 int merge(vector<int>& a, int l, int m, int h)
 {
 	int count = 0;

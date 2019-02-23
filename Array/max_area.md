@@ -9,7 +9,7 @@
 
 [源代码](/Array/max_area.cpp)
 
-```
+```cpp
 // 时间复杂度：O(n^2)
 int maxArea(vector<int> &height)
 {

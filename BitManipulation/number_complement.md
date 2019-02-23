@@ -13,7 +13,7 @@ Explanation: The binary representation of 5 is 101 (no leading zero bits), and i
 
 [源代码](/BitManipulation/number_complement.cpp)
 
-```
+```cpp
 int findComplement(int num)
 {
 	int k = 1;

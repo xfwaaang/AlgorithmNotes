@@ -15,7 +15,7 @@
 [code](/BacktrackingRecursive/hanoi.cpp)
 
 
-```
+```cpp
 enum tower
 {
 	A = 'X',

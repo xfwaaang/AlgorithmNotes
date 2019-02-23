@@ -6,7 +6,7 @@
 
 [code](/String/int2roman.cpp)
 
-```
+```cpp
 string int2roman(int num)
 {
 	string res = "";

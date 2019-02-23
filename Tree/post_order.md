@@ -5,7 +5,7 @@
 
 #### 代码实现
 
-```
+```cpp
 struct TreeNode
 {
 	int val;

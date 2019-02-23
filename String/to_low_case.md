@@ -8,7 +8,7 @@ LONEly - lonely
 
 [code](/String/to_low_case.cpp)
 
-```
+```cpp
 string toLowCase(string str)
 {
 	for(int i=0; i<str.size(); ++i)

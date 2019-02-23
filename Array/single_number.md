@@ -15,7 +15,7 @@
 
 [源代码](/Array/single_number.cpp)
 
-```
+```cpp
 int singleNumber(int A[], int n)
 {
 	int res = A[0];

@@ -21,7 +21,7 @@
 
 [code](/DynamicPrograming/max_formula.cpp)
 
-```
+```cpp
 int solve(vector<int> a, int k)
 {
 	int n = a.size();

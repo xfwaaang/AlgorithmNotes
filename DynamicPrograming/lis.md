@@ -12,7 +12,7 @@ dp(i) = max(1 <= j < i){ dp(j) }          , A[j] > A[i]
   
 #### 代码实现
 [code](/DynamicPrograming/lis.cpp)  
-```
+```cpp
 int solve(vector<int>& A)
 {
 	int n = A.size();

@@ -3,7 +3,7 @@ reshape matrix
 
 #### 代码实现
 
-```
+```cpp
 vector<vector<int>> matrixReshape(vector<vector<int>>& nums, int r, int c) {
         int m = nums.size();
         int n = nums[0].size();

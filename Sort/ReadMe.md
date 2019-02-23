@@ -21,7 +21,8 @@
 > 时间复杂度：O(n^2), 空间复杂度：O(1)    
   稳定, 比较次数：O(n)~O(n^2)
 
-```
+
+```cpp
 void insertSort(std::vector<int>& a)
 {
 	for(int i=1; i<a.size(); ++i)
@@ -45,7 +46,7 @@ void insertSort(std::vector<int>& a)
 > 时间复杂度：O(n^2), 空间复杂度：O(1)  
   稳定, 比较次数：O(nlogn)
 
-```
+```cpp
 void binaryInsertSort(std::vector<int>& a)
 {
 	int low, high, mid, key;
@@ -82,7 +83,7 @@ void binaryInsertSort(std::vector<int>& a)
 > 时间复杂度：O(n^2), 空间复杂度：O(1) 
   稳定
 
-```
+```cpp
 void bubbleSort(std::vector<int> &a)
 {
 	bool flag = false;	//一次冒泡过程没有发生一次交换，则序列已排序完成
@@ -109,7 +110,7 @@ void bubbleSort(std::vector<int> &a)
 > 时间复杂度：平均O(nlogn) 最坏O(n^2)  
   空间复杂度：O(1), 不稳定
 
-```
+```cpp
 int partition(std::vector<int>& a, int low, int high)
 {
 	int pivot = a[low];
@@ -151,7 +152,7 @@ void quickSort(std::vector<int>& a)
 > 简单选择排序, 时间复杂度：O(n^2)  
   空间复杂度：O(1), 不稳定
 
-```
+```cpp
 void selectSort(std::vector<int> &a)
 {
 	for(int i=0; i<a.size()-1; ++i)
@@ -178,7 +179,7 @@ void selectSort(std::vector<int> &a)
 > 时间复杂度：O(nlogn), 空间复杂度：O(1)  
   不稳定
 
-```
+```cpp
 /*
 自下往上调整k节点
 */
@@ -235,7 +236,7 @@ void heapSort(std::vector<int> &a)
 > 时间复杂度：O(nlogn), 空间复杂度：O(n)  
   稳定
 
-```
+```cpp
 void merge(std::vector<int> &a, int l, int m, int r)
 {
 	std::vector<int> b(a);

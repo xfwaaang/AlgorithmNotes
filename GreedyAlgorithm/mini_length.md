@@ -23,7 +23,7 @@
 [code](/GreedyAlgorithm/mini_length.cpp)  
 
 方法一
-```
+```cpp
 int solve(vector<int> a)
 {
 	int res = 0;
@@ -51,7 +51,7 @@ int solve(vector<int> a)
 }
 ```
 方法二
-```
+```cpp
 int solve(vector<int> a)
 {
 	int res = 0;

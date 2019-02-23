@@ -18,7 +18,7 @@ Explanation: B = [3,3,3] or B = [4,4,4]
 
 [源代码](/Array/smallest_range_i.cpp)
 
-```
+```cpp
 int smallestRangeI(vector<int> &A, int k)
 {
 	int maxx = A[0];

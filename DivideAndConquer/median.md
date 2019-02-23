@@ -29,7 +29,7 @@
 
 [源代码](/DivideAndConquer/median.cpp)
 
-```
+```cpp
 int getKth(vector<int>& v1, int start1, int end1, vector<int>& v2, int start2, int end2, int k)
 {
 	int n1 = end1 - start1 + 1;

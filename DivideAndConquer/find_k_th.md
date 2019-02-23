@@ -14,7 +14,7 @@
 
 #### 代码实现
 [code](/DivideAndConquer/find_k_th.cpp)  
-```
+```cpp
 int findKth(int A[], int s, int e, int k)
 {
 	// 一次划分后基准元素最终的位置

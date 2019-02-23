@@ -10,7 +10,7 @@ Explanation: n is 2, and the maximum sum of pairs is 4 = min(1, 2) + min(3, 4).
 
 [源代码](/Array/array_pair_sum.cpp)
 
-```
+```cpp
 int arrayPairSum(vector<int>& a)
 {
 	int res = 0;

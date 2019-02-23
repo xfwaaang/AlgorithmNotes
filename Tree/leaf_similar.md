@@ -6,7 +6,7 @@
 
 [源代码](/Tree/leaf_similar.cpp)
 
-```
+```cpp
 struct TreeNode
 {
 	int val;
@@ -19,7 +19,7 @@ struct TreeNode
 - 利用先序遍历求出叶子节点的值序列
 再比较输出结果
 
-```
+```cpp
 void preOrder(TreeNode *root, vector<int> &v)
 {
 	if(root)
@@ -46,7 +46,7 @@ bool leafSimilar(TreeNode *root1, TreeNode *root2)
 
 - 利用深度优先搜索解决
 
-```
+```cpp
 int dfs(stack<TreeNode*> &s)
 {
 	while(true)

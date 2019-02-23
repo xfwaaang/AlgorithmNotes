@@ -12,7 +12,7 @@ Output: [3, 2, 1, 0, 1, 0, 0, 1, 2, 2, 1, 0]
 若 S[j] != C ，则 S[k] 与 C 的最短距离为 k - i；
 否则，S[k] 与 C 的最短距离为 min(j - k, k - i)
 
-```
+```cpp
 vector<int> shortestToChar(string S, char C) 
 {
     vector<int> res;
@@ -46,7 +46,7 @@ vector<int> shortestToChar(string S, char C)
 设置 i 和 j，i 指向当前元素 S[k] 左边且距其最近的字符C的位置；j 指向 S[k] 右边且距其最近的字符C的位置  
 遍历 S，遇到字符 C，更新 i 和 j，S[k] 与 C 的最短距离为 min(k-i, j-k)
 
-```
+```cpp
 vector<int> shortestToChar(string S, char C) 
 {
     vector<int> res;
@@ -76,7 +76,7 @@ vector<int> shortestToChar(string S, char C)
 
 ##### 方法三
 
-```
+```cpp
 vector<int> shortestToChar(string S, char C) 
 {
     int n = S.size();
@@ -101,7 +101,7 @@ vector<int> shortestToChar(string S, char C)
 
 ##### 方法四
 
-```
+```cpp
 vector<int> shortestToChar(string S, char C) 
 {
     int n = S.size();

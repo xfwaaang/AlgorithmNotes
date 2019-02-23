@@ -13,7 +13,7 @@
 
 [code](/Recursive/gen_all_permutation.cpp)
 
-```
+```cpp
 /*
 输出所有可能的排列
 k：起始位置

@@ -9,7 +9,7 @@
 
 [code](/BacktrackingRecursive/eight_queens.cpp)
 
-```
+```cpp
 #include<iostream>
 
 using namespace std;

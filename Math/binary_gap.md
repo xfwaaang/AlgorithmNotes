@@ -12,7 +12,7 @@ Explanation: 8 in binary is 0b1000.
 
 [code](/Math/binary_gap.cpp)
 
-```
+```cpp
 int binaryGap(int N)
 {
 	vector<int> a;
@@ -47,7 +47,7 @@ int binaryGap(int N)
 }
 ```
 
-```
+```cpp
 int binaryGap_2(int N)
 {
 	int maxd = 0;

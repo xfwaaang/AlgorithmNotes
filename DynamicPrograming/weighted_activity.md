@@ -17,7 +17,7 @@ dp(i) = max{dp(i-1), dp(k) + v_i} ，  0 < k < i
 #### 代码实现
 
 [code](/DynamicPrograming/weighted_activity.cpp)
-```
+```cpp
 struct Activity
 {
 	int s;
@@ -32,7 +32,7 @@ struct Activity
 	Activity(int s, int e, int w): s(s), f(e), v(w){}
 };
 ```
-```
+```cpp
 int solve(vector<Activity> a)
 {
 	int n = a.size();
