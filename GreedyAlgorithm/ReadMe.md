@@ -52,3 +52,6 @@
 - [消减数字](/GreedyAlgorithm/remove_digtal.md)
 
 
+更多示例见: [LeetCodeNotes#greedy](https://github.com/xfwangmm/LeetCodeNotes/blob/master/notes/greedy.md)
+
+

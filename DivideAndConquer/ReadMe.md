@@ -43,3 +43,5 @@
 
 - [最大子数组和](/DivideAndConquer/max_subarray.md)
 
+
+更多示例见: [LeetCodeNotes#dac](https://github.com/xfwangmm/LeetCodeNotes/blob/master/notes/dac.md)
