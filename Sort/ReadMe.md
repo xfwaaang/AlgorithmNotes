@@ -110,7 +110,7 @@ void bubbleSort(std::vector<int> &a)
 > 时间复杂度：平均O(nlogn) 最坏O(n^2)  
   空间复杂度：O(1), 不稳定
 
-> 2-ways-partition
+2-ways-partition
 ```cpp
 int partition(std::vector<int>& a, int low, int high)
 {
@@ -127,9 +127,9 @@ int partition(std::vector<int>& a, int low, int high)
 	return low;
 }
 ```
-> 3-ways-partition  
-  可以用来解决分类问题，如荷兰国旗问题  
-  Leetcode 75. Sort Colors
+3-ways-partition  
+可以用来解决分类问题，如荷兰国旗问题  
+Leetcode 75. Sort Colors
 ```cpp
 int partition(std::vector<int>& a, int target)
 {
