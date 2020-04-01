@@ -90,7 +90,6 @@
 
 - [编辑距离](/DynamicPrograming/edit_distance.md)
 	> 求两个字符串，由一个转成另一个所需的最少编辑次数  
-	  todo
 
 - [最大m子段和](/DynamicPrograming/max_m_subarray.md)  
 	> 给定n个数，选择m个不相交的子段，使得所有子段和最大
