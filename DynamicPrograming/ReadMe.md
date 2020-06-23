@@ -86,7 +86,6 @@
 
 - [最长非降子序列](/DynamicPrograming/lis.md)
 	> 求一个序列的最长非降子序列的长度  
-	  有问题，todo
 
 - [编辑距离](/DynamicPrograming/edit_distance.md)
 	> 求两个字符串，由一个转成另一个所需的最少编辑次数  
