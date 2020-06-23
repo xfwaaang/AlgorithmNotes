@@ -31,9 +31,9 @@ void printArray(T a[], int n)
 }
 
 template<class T>
-void printArray(std::vector<T> a)
+void printArray(std::vector<T>& a)
 {
-	for(T i=0; i<a.size(); ++i)
+	for(int i=0; i<a.size(); ++i)
 		std::cout << a[i] << " ";
 	std::cout << std::endl;
 }
@@ -52,7 +52,7 @@ int random(int min = 0, int max = 100)
 /*
 生成一个长度为n的随机数组，每个数在[min,max]之间
 */
-std::vector<int> genRandomArray(int n = 10, int min = 0, int max = 100)
+std::vector<int> genRandomArray(int n = 6, int min = 0, int max = 10)
 {
 	if (n < 1 || min > max)
 		throw "Invalid arguments";
