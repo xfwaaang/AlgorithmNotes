@@ -1,5 +1,5 @@
 #### 题目描述
-给定两个序列X和Y，求它们的最长公共子序列的长度(longest common subsequence)
+给定两个序列X和Y，求它们的最长公共子序列（不要求连续，公共子串才是连续的）的长度(longest common subsequence)
 
 #### 解题思路
 设`X[m]=(x1,x2,...,xm)`和`Y[n]=(y1,y2,...,yn)`，`Z=(z1,z2,...,zk)`是`X`和`Y`的最长公共子序列，则
