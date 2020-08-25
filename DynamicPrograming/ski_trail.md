@@ -55,23 +55,24 @@ int solve(vector<int>& A)
 int lis(vector<int>& A)
 {
 	int n = A.size();
+	int max_dp = 1;
 	vector<int> dp(n+1, 1);
 
 	for(int i=2; i<=n; ++i)
 	{
+		int tmp = -1;
 		for(int j=1; j<=i-1; ++j)
 		{
 			if(A[i-1] >= A[j-1])
 			{
-				dp[i] = max(dp[i], dp[j] + 1);
-			}
-			else
-			{
-				dp[i] = max(dp[i], dp[j]);
+				tmp = max(tmp, dp[j]);
 			}
 		}
+		
+		dp[i] = (tmp == -1 ? 1 : tmp + 1);
+		max_dp = max(max_dp, dp[i]);
 	}
 
-	return dp[n];
+	return max_dp;
 }
 ```
